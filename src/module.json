@@ -1,0 +1,19 @@
+{
+	"name": "deprecated-modules",
+	"title": "Deprecated Modules",
+	"description": "Warns gamemasters when they're using a module that's been integrated into core or is considered unsafe to use.",
+	"version": "1.0.0",
+	"author": "iceman76",
+	"minimumCoreVersion": "0.6.6",
+	"compatibleCoreVersion": "0.7.7",
+	"esmodules": [
+		"deprecatedModules.js"
+	],
+	"languages": [
+		{
+			"lang": "en",
+			"name": "English",
+			"path": "lang/en.json"
+		}
+	]
+}
