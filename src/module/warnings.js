@@ -2,7 +2,7 @@ export const WarningCategory = Object.freeze({
     Core: "core", // The module's functionality has been integrated into core,
     Broken:  "broken", // The module no longer works
     Replaced: "replaced", // The module is no longer maintained and has been replaced by another module
-    Relocated: "relocated" // The module has been officially forked and all future updates will come from another manifest
+    Relocated: "relocated" // The module has been officially relocated and all future updates will come from another manifest
 })
 
 /**

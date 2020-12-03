@@ -1,3 +1,4 @@
+import { Settings } from "./settings.js";
 import { warnings } from "./warnings.js";
 
 export class ModuleChecker {
@@ -11,8 +12,12 @@ export class ModuleChecker {
     }
 
     static checkModule(name, version) {
+        const ignoredWarnings = Settings.getIgnoredWarnings();
         for(let warning of warnings) {
             if(warning.module !== name) {
+                continue;
+            }
+            if(ignoredWarnings.includes(warning.id)) {
                 continue;
             }
             if(warning.highestVersion && isNewerVersion(warning.highestVersion, version)) {
@@ -23,11 +28,23 @@ export class ModuleChecker {
     }
     
     static createAlert(warning) {
-        Dialog.prompt({
+        let d = new Dialog({
             title: "Deprecated Module",
-            content: warning.message,
-            label: "OK",
-            callback: () => {}
+            content: "<p>" + warning.message + "</p>",
+            buttons: {
+                ignore: {
+                    icon: '<i class="fas fa-times"></i>',
+                    label: 'Don\'t show this again',
+                    callback: () => Settings.ignoreWarning(warning.id)
+                },
+                accept: {
+                    icon: '<i class="fas fa-check"></i>',
+                    label: 'OK',
+                    callback: () => {}
+                }
+            },
+            default: "accept"
         });
+        d.render(true);
     }
 }
