@@ -1,16 +1,22 @@
 export const WarningCategory = Object.freeze({
-    Core: "core", // The module's functionality has been integrated into core,
-    Broken:  "broken", // The module no longer works
-    Replaced: "replaced", // The module is no longer maintained and has been replaced by another module
-    Relocated: "relocated" // The module has been officially relocated and all future updates will come from another manifest
+    Core: "core", // The module's functionality has been integrated into core. (0-199)
+    Broken:  "broken", // The module no longer works (200-299)
+    Replaced: "replaced", // The module is no longer maintained and has been replaced by another module (300-499)
+    Relocated: "relocated" // The module has been officially relocated and all future updates will come from another manifest (500-599)
 })
 
 class DefaultMessages {
     static core(details) {
-        let message = "{} has been integrated into core Foundry, so it can be uninstalled.";
+        let message = "{} has been integrated into core Foundry, so it should be uninstalled.";
         if(details) {
             message += " " + details;
         }
+        return message;
+    }
+
+    static replaced(replacement) {
+        let message = "{} is no longer being maintained and could break with any Foundry update. It is recommended that you replace it with ";
+        message += "<b><u>" + replacement + "</u></b>.";
         return message;
     }
 }
@@ -26,6 +32,7 @@ class DefaultMessages {
  * inactive: (Optional) If true, this warning won't be shown to the user.
  */
 export const warnings = [
+    //Core Warnings (0-199)
     {
         id: 0,
         module: "deselection",
@@ -81,5 +88,63 @@ export const warnings = [
         category: WarningCategory.Core,
         message: DefaultMessages.core(),
         coreVersion: "0.7.4"
+    },
+
+    //Replaced Warnings (300-499)
+    {
+        id: 300,
+        module: "dynamiceffects",
+        category: WarningCategory.Replaced,
+        message: DefaultMessages.replaced("Dynamic Active Effects"),
+        coreVersion: "0.7.0"
+    },
+    {
+        id: 301,
+        module: "teleport",
+        category: WarningCategory.Replaced,
+        message: DefaultMessages.replaced("Multilevel Tokens"),
+        coreVersion: "0.7.0"
+    },
+    {
+        id: 302,
+        module: "DancingLights",
+        category: WarningCategory.Replaced,
+        message: "Now that Foundry has built in light animations, {} is no longer needed and should be uninstalled. For additional animations, install <b><u>CommunityLighting by Blitz</u></b>.",
+        coreVersion: "0.7.5"
+    },
+    {
+        id: 303,
+        module: "darker-vision-for-5e",
+        category: WarningCategory.Replaced,
+        message: DefaultMessages.replaced("Perfect Vision"),
+        coreVersion: "0.7.5"
+    },
+    {
+        id: 304,
+        module: "darkvision5e",
+        category: WarningCategory.Replaced,
+        message: DefaultMessages.replaced("Perfect Vision"),
+        coreVersion: "0.7.5"
+    },
+    {
+        id: 305,
+        module: "minor-qol",
+        category: WarningCategory.Replaced,
+        message: DefaultMessages.replaced("Midi Quality of Life Improvements"),
+        coreVersion: "0.7.5"
+    },
+    {
+        id: 306,
+        module: "gm-bg",
+        category: WarningCategory.Replaced,
+        message: DefaultMessages.replaced("Scenery"),
+        coreVersion: "0.7.5"
+    },
+    {
+        id: 307,
+        module: "cursor-zoom",
+        category: WarningCategory.Replaced,
+        message: DefaultMessages.replaced("Zoom/Pan Options"),
+        coreVersion: "0.6.0"
     }
 ]
