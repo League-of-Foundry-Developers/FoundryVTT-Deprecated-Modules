@@ -7,9 +7,40 @@ export class ModuleChecker {
             if(!module.active) {
                 continue;
             }
-            let warningDetails = this.getWarning(name, module.data);
+            let warningDetails = this.checkManifest(module.data);
+            if(!warningDetails) {
+                warningDetails = this.getWarning(name, module.data);
+            }
             if(warningDetails) {
                 this.createAlert(warningDetails);
+            }
+        }
+    }
+
+    static checkManifest(data) {
+        if(data.deprecated) {
+            if(data.deprecated.coreVersion && isNewerVersion(data.deprecated.coreVersion, game.data.version)) {
+                return;
+            }
+            let message = "Please disable ";
+            message += "<b><u>" + data.title + "</u></b>";
+            message += ". Its creator has stated they are no longer maintaining it, and it could break with any Foundry update.<br>";
+            if(data.deprecated.reason) {
+                message += "Reason: " + data.deprecated.reason + "<br>";
+            }
+            if(data.deprecated.alternatives) {
+                message += "Suggested Alternatives: ";
+                data.deprecated.alternatives.forEach(module => {
+                    message += "<u>" + module.name + "</u>, ";
+                })
+                //Remove the final comma
+                message = message.slice(0, -2);
+            }
+
+            return {
+                message: message,
+                name: data.name,
+                version: data.version,
             }
         }
     }
@@ -38,7 +69,9 @@ export class ModuleChecker {
             const message = warning.message.replace("{}", "<b><u>" + moduleData.title + "</u></b>");
             return {
                 message: message,
-                warningId: warning.id
+                warningId: warning.id,
+                name: moduleData.name,
+                version: moduleData.version
             }
         }
     }

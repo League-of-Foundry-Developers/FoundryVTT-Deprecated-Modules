@@ -11,6 +11,9 @@ export class Settings {
      * @param {number} warningID The ID of the warning
      */
     static ignoreWarning(warningID) {
+        if(warningID == null) {
+            return;
+        }
         const ignored = game.settings.get(modName, ignoredWarnings);
         if(ignored == null) {
             ignored = []
