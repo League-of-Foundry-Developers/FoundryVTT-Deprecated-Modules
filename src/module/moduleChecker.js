@@ -7,13 +7,17 @@ export class ModuleChecker {
             if(!module.active) {
                 continue;
             }
-            this.checkModule(name, module.data);
+            let warningDetails = this.getWarning(name, module.data);
+            if(warningDetails) {
+                this.createAlert(warningDetails);
+            }
         }
     }
 
-    static checkModule(name, data) {
+    static getWarning(name, moduleData) {
         const ignoredWarnings = Settings.getIgnoredWarnings();
         for(let warning of warnings) {
+            //Check to see if the warning is applicable
             if(warning.module !== name) {
                 continue;
             }
@@ -26,23 +30,28 @@ export class ModuleChecker {
             if(isNewerVersion(warning.coreVersion, game.data.version)) {
                 continue;
             }
-            if(warning.highestVersion && isNewerVersion(warning.highestVersion, data.version)) {
+            if(warning.highestVersion && isNewerVersion(warning.highestVersion, moduleData.version)) {
                 continue;
             }
-            this.createAlert(warning, data.title);
+
+            //Build the warning that will be displayed
+            const message = warning.message.replace("{}", "<b><u>" + moduleData.title + "</u></b>");
+            return {
+                message: message,
+                warningId: warning.id
+            }
         }
     }
     
-    static createAlert(warning, title) {
-        const message = warning.message.replace("{}", "<b><u>" + title + "</u></b>");
+    static createAlert(warningDetails) {
         let d = new Dialog({
             title: "Deprecated Module",
-            content: "<p>" + message + "</p>",
+            content: "<p>" + warningDetails.message + "</p>",
             buttons: {
                 ignore: {
                     icon: '<i class="fas fa-times"></i>',
                     label: 'Don\'t show this again',
-                    callback: () => Settings.ignoreWarning(warning.id)
+                    callback: () => Settings.ignoreWarning(warningDetails.warningId)
                 },
                 accept: {
                     icon: '<i class="fas fa-check"></i>',
