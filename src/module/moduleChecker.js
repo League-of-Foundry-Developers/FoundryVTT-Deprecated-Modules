@@ -3,10 +3,18 @@ import { warnings } from "./warnings.js";
 
 export class ModuleChecker {
     static checkModules() {
+        // This can be optimized. A lot.
+        // Will I optimize it? Nah.
         for (let [name, module] of game.modules) {
+            //See if we should skip checking this module
             if(!module.active) {
                 continue;
             }
+            if(this.moduleIsIgnored(module.data.name, module.data.version)) {
+                continue;
+            }
+
+            //Check the module
             let warningDetails = this.checkManifest(module.data);
             if(!warningDetails) {
                 warningDetails = this.getWarning(name, module.data);
@@ -84,7 +92,14 @@ export class ModuleChecker {
                 ignore: {
                     icon: '<i class="fas fa-times"></i>',
                     label: 'Don\'t show this again',
-                    callback: () => Settings.ignoreWarning(warningDetails.warningId)
+                    callback: () => {
+                        if(warningDetails.warningId) {
+                            Settings.ignoreWarning(warningDetails.warningId)
+                        }
+                        else {
+                            this.ignoreModule(warningDetails.name, warningDetails.version);
+                        }
+                    }
                 },
                 accept: {
                     icon: '<i class="fas fa-check"></i>',
@@ -95,5 +110,16 @@ export class ModuleChecker {
             default: "accept"
         });
         d.render(true);
+    }
+
+    static ignoreModule(name, version) {
+        const moduleString = name + "-" + version;
+        Settings.ignoreModule(moduleString);
+    }
+
+    static moduleIsIgnored(name, version) {
+        const moduleString = name + "-" + version;
+        const ignoredModules = Settings.getIgnoredModules();
+        return ignoredModules.includes(moduleString);
     }
 }

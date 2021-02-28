@@ -1,6 +1,7 @@
 import { modName } from "./utils.js";
 
 export const ignoredWarnings = "IgnoredWarnings";
+export const ignoredModules = "IgnoredModules";
 
 /**
  * A class to handle interacting with Foundry's settings.
@@ -16,10 +17,25 @@ export class Settings {
         }
         const ignored = game.settings.get(modName, ignoredWarnings);
         if(ignored == null) {
-            ignored = []
+            ignored = [];
         }
         ignored.push(warningID);
         game.settings.set(modName, ignoredWarnings, ignored);
+    }
+
+    /**
+     * Adds a module to the list of modules to not check
+     */
+    static ignoreModule(module) {
+        if(module == null) {
+            return;
+        }
+        const ignored = game.settings.get(modName, ignoredModules);
+        if(ignored == null) {
+            ignored = [];
+        }
+        ignored.push(module);
+        game.settings.set(modName, ignoredModules, ignored);
     }
 
     /**
@@ -27,6 +43,13 @@ export class Settings {
      */
     static getIgnoredWarnings() {
         return game.settings.get(modName, ignoredWarnings) ?? [];
+    }
+
+    /**
+     * Gets the list of modules that should not be checked
+     */
+    static getIgnoredModules() {
+        return game.settings.get(modName, ignoredModules) ?? [];
     }
 
     /**
@@ -38,6 +61,12 @@ export class Settings {
 
     static registerSettings() {
         game.settings.register(modName, ignoredWarnings, {
+            scope: "world",
+            config: false,
+            default: []
+        });
+
+        game.settings.register(modName, ignoredModules, {
             scope: "world",
             config: false,
             default: []
