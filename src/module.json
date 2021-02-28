@@ -5,7 +5,7 @@
 	"version": "1.0.0",
 	"author": "iceman76",
 	"minimumCoreVersion": "0.6.6",
-	"compatibleCoreVersion": "0.7.7",
+	"compatibleCoreVersion": "0.7.9",
 	"esmodules": [
 		"deprecatedModules.js"
 	],
@@ -15,5 +15,12 @@
 			"name": "English",
 			"path": "lang/en.json"
 		}
-	]
+	],
+	"url": "https://github.com/League-of-Foundry-Developers/FoundryVTT-Deprecated-Modules",
+	"manifest": "https://github.com/League-of-Foundry-Developers/FoundryVTT-Deprecated-Modules/releases/latest/download/module.json",
+	"download": "https://github.com/League-of-Foundry-Developers/FoundryVTT-Deprecated-Modules/releases/latest/download/module.zip",
+	"license": "https://github.com/League-of-Foundry-Developers/FoundryVTT-Deprecated-Modules/blob/master/LICENSE",
+	"readme": "https://github.com/League-of-Foundry-Developers/FoundryVTT-Deprecated-Modules/blob/master/README.md",
+	"bugs": "https://github.com/League-of-Foundry-Developers/FoundryVTT-Deprecated-Modules/issues",
+	"changelog": "https://github.com/League-of-Foundry-Developers/FoundryVTT-Deprecated-Modules/blob/master/CHANGELOG.md"
 }
