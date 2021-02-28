@@ -5,6 +5,16 @@ export const WarningCategory = Object.freeze({
     Relocated: "relocated" // The module has been officially relocated and all future updates will come from another manifest
 })
 
+class DefaultMessages {
+    static core(details) {
+        let message = "{} has been integrated into core Foundry, so it can be uninstalled.";
+        if(details) {
+            message += " " + details;
+        }
+        return message;
+    }
+}
+
 /**
  * Each warning has the following possible fields:
  * id: Used to remember which warnings the user has ignored.
@@ -20,56 +30,56 @@ export const warnings = [
         id: 0,
         module: "deselection",
         category: WarningCategory.Core,
-        message: "{} has been integrated into core Foundry, so it can be uninstalled. To enable it in Foundry, go to 'Configure Settings' -> 'Core Settings' and check 'Left-Click to Release Objects'.",
+        message: DefaultMessages.core("To enable it in Foundry, go to 'Configure Settings' -> 'Core Settings' and check 'Left-Click to Release Objects'."),
         coreVersion: "0.7.5"
     },
     {
         id: 1,
         module: "quicksceneview",
         category: WarningCategory.Core,
-        message: "{} has been integrated into core Foundry, so it can be uninstalled.",
+        message: DefaultMessages.core(),
         coreVersion: "0.7.5"
     },
     {
         id: 2,
         module: "BatchPermissionsByFolder",
         category: WarningCategory.Core,
-        message: "{} has been integrated into core Foundry, so it can be uninstalled.",
+        message: DefaultMessages.core(),
         coreVersion: "0.7.5"
     },
     {
         id: 3,
         module: "note-text-color",
         category: WarningCategory.Core,
-        message: "{} has been integrated into core Foundry, so it can be uninstalled.",
+        message: DefaultMessages.core(),
         coreVersion: "0.7.5"
     },
     {
         id: 4,
         module: "no-summon-vision",
         category: WarningCategory.Core,
-        message: "{} has been integrated into core Foundry, so it can be uninstalled.",
+        message: DefaultMessages.core(),
         coreVersion: "0.7.5"
     },
     {
         id: 5,
         module: "noback",
         category: WarningCategory.Core,
-        message: "{} has been integrated into core Foundry, so it can be uninstalled.",
+        message: DefaultMessages.core(),
         coreVersion: "0.7.5"
     },
     {
         id: 6,
         module: "token-owner-selection-tweak",
         category: WarningCategory.Core,
-        message: "{} has been integrated into core Foundry, so it can be uninstalled.",
+        message: DefaultMessages.core(),
         coreVersion: "0.7.5"
     },
     {
         id: 7,
         module: "returntosetup",
         category: WarningCategory.Core,
-        message: "{} has been integrated into core Foundry, so it can be uninstalled.",
+        message: DefaultMessages.core(),
         coreVersion: "0.7.4"
     }
 ]
