@@ -20,6 +20,9 @@ export class ModuleChecker {
             if(ignoredWarnings.includes(warning.id)) {
                 continue;
             }
+            if(warning.inactive) {
+                continue;
+            }
             if(warning.highestVersion && isNewerVersion(warning.highestVersion, data.version)) {
                 continue;
             }
