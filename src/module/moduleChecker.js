@@ -86,6 +86,11 @@ export class ModuleChecker {
     }
 
     static checkRelocation(module) {
+        // Currently on hold, because this may be made redundant by the 0.8.x series of updates
+        // See https://gitlab.com/foundrynet/foundryvtt/-/issues/4219
+        // If I do end up implementing this, need to work on caching to avoid DDOSing the Forge
+        // See https://gitlab.com/tiwato/quick_module_enable/-/issues/1
+        return;
         //If the local module isn't checking a manifest for updates, don't bother comparing to the official manifest
         if(!module.data.manifest) {
             return;
