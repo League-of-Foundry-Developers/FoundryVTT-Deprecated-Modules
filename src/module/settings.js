@@ -2,6 +2,7 @@ import { modName } from "./utils.js";
 
 export const ignoredWarnings = "IgnoredWarnings";
 export const ignoredModules = "IgnoredModules";
+export const resetCheckbox = "ResetCheckbox";
 
 /**
  * A class to handle interacting with Foundry's settings.
@@ -53,13 +54,29 @@ export class Settings {
     }
 
     /**
-     * Removes all warnings from the list of warnings to be ignored
+     * Removes all modules & warnings from the list of ones that aren't checked
      */
-    static resetIgnoredWarnings() {
+    static resetIgnored() {
         game.settings.set(modName, ignoredWarnings, []);
+        game.settings.set(modName, ignoredModules, []);
     }
 
     static registerSettings() {
+        game.settings.register(modName, resetCheckbox, {
+            name: "Reset Ignored Warnings",
+            hint: "If you've ignored any warnings, checking this and saving will show them again.",
+            scope: "world",
+            config: true,
+            type: Boolean,
+            default: false,
+            onChange: value => {
+                if(value) {
+                    this.resetIgnored();
+                    game.settings.set(modName, resetCheckbox, false);
+                }
+            }
+        });
+
         game.settings.register(modName, ignoredWarnings, {
             scope: "world",
             config: false,
