@@ -7,11 +7,11 @@ export class ModuleChecker {
             if(!module.active) {
                 continue;
             }
-            this.checkModule(name, module.data.version);
+            this.checkModule(name, module.data);
         }
     }
 
-    static checkModule(name, version) {
+    static checkModule(name, data) {
         const ignoredWarnings = Settings.getIgnoredWarnings();
         for(let warning of warnings) {
             if(warning.module !== name) {
@@ -20,17 +20,18 @@ export class ModuleChecker {
             if(ignoredWarnings.includes(warning.id)) {
                 continue;
             }
-            if(warning.highestVersion && isNewerVersion(warning.highestVersion, version)) {
+            if(warning.highestVersion && isNewerVersion(warning.highestVersion, data.version)) {
                 continue;
             }
-            this.createAlert(warning);
+            this.createAlert(warning, data.title);
         }
     }
     
-    static createAlert(warning) {
+    static createAlert(warning, title) {
+        const message = warning.message.replace("{}", "<b><u>" + title + "</u></b>");
         let d = new Dialog({
             title: "Deprecated Module",
-            content: "<p>" + warning.message + "</p>",
+            content: "<p>" + message + "</p>",
             buttons: {
                 ignore: {
                     icon: '<i class="fas fa-times"></i>',
