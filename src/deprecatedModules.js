@@ -7,6 +7,8 @@ Hooks.on("init", function() {
 });
 
 Hooks.on("ready", function() {
-    console.log("Deprecated Modules | Checking modules");
-    ModuleChecker.checkModules();
+    if(game.user.isGM) {
+        console.log("Deprecated Modules | Checking modules");
+        ModuleChecker.checkModules();
+    }
 });
