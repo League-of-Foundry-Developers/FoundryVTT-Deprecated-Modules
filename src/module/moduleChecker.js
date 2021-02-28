@@ -23,6 +23,9 @@ export class ModuleChecker {
             if(warning.inactive) {
                 continue;
             }
+            if(isNewerVersion(warning.coreVersion, game.data.version)) {
+                continue;
+            }
             if(warning.highestVersion && isNewerVersion(warning.highestVersion, data.version)) {
                 continue;
             }
