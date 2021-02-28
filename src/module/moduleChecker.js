@@ -19,6 +19,7 @@ export class ModuleChecker {
             if(!warningDetails) {
                 warningDetails = this.getWarning(name, module.data);
             }
+            this.checkRelocation(module);
             if(warningDetails) {
                 this.createAlert(warningDetails);
             }
@@ -82,6 +83,49 @@ export class ModuleChecker {
                 version: moduleData.version
             }
         }
+    }
+
+    static checkRelocation(module) {
+        //If the local module isn't checking a manifest for updates, don't bother comparing to the official manifest
+        if(!module.data.manifest) {
+            return;
+        }
+        const manifest = fetch("https://forge-vtt.com/api/bazaar/manifest/" + module.data.name + "?coreVersion=" + game.data.version)
+            .then(query => {
+                query.json().then(officialModule => {
+                    if(this.moduleHasRelocated(module, officialModule.manifest)) {
+                        this.createRelocationAlert(module);
+                    }
+                });
+            });
+    }
+
+    static moduleHasRelocated(module, manifest) {
+        if(!manifest) {
+            return false;
+        }
+        if(module.data.manifest === manifest.manifest) {
+            return false;
+        }
+        if(isNewerVersion(module.data.version, manifest.version)) {
+            return false;
+        }
+        return true;
+    }
+
+    static createRelocationAlert(module) {
+        let message = "The official source for updating {} has been changed, ";
+        message += "which is preventing you from getting further updates for it. ";
+        message += "It is recommended that you uninstall and reinstall {} ";
+        message += "from Foundry's setup page in order to receive future updates.";
+        message = message.replace(/\{\}/g, "<b><u>" + module.data.title + "</u></b>");
+        this.createAlert(
+            {
+                message: message,
+                name: module.data.name,
+                version: module.data.version
+            }
+        );
     }
     
     static createAlert(warningDetails) {
