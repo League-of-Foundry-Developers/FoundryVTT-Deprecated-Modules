@@ -28,6 +28,8 @@ These modules have stopped being maintained, and are either broken or could be b
 * Minor QOL (Midi QOL)
 * GM Background (Scenery)
 * Cursor Zoom (Zoom/Pan Options)
+* VTTA - D&D Beyond Integration (D&D Beyond Importer)
+* VTTA - Party Overview (Party Overview, Illandril's Token Tooltips/Token Tooltip Alt)
 
 # Module Developers
 

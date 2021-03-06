@@ -14,8 +14,13 @@ class DefaultMessages {
         return message;
     }
 
+    static broken() {
+        let message = "{} is no longer being maintained and could break with any Foundry update, if it hasn't already. It is recommended that you uninstall it.";
+        return message;
+    }
+
     static replaced(replacement) {
-        let message = "{} is no longer being maintained and could break with any Foundry update. It is recommended that you replace it with ";
+        let message = "{} is no longer being maintained and could break with any Foundry update, if it hasn't already. It is recommended that you replace it with ";
         message += "<b><u>" + replacement + "</u></b>.";
         return message;
     }
@@ -90,6 +95,50 @@ export const warnings = [
         coreVersion: "0.7.4"
     },
 
+    //Broken Warnings (200-299)
+    {
+        id: 200,
+        module: "chat-autoloader",
+        category: WarningCategory.Broken,
+        message: DefaultMessages.broken(),
+        coreVersion: "0.6.6"
+    },
+    {
+        id: 201,
+        module: "chat-colors-and-more",
+        category: WarningCategory.Broken,
+        message: DefaultMessages.broken(),
+        coreVersion: "0.6.6"
+    },
+    {
+        id: 202,
+        module: "critical-fumble",
+        category: WarningCategory.Broken,
+        message: DefaultMessages.broken(),
+        coreVersion: "0.6.6"
+    },
+    {
+        id: 203,
+        module: "foundry-patrol",
+        category: WarningCategory.Broken,
+        message: DefaultMessages.broken(),
+        coreVersion: "0.7.5"
+    },
+    {
+        id: 204,
+        module: "route-finder",
+        category: WarningCategory.Broken,
+        message: DefaultMessages.broken(),
+        coreVersion: "0.7.5"
+    },
+    {
+        id: 205,
+        module: "bullseye",
+        category: WarningCategory.Broken,
+        message: DefaultMessages.broken(),
+        coreVersion: "0.7.9"
+    },
+
     //Replaced Warnings (300-499)
     {
         id: 300,
@@ -146,5 +195,42 @@ export const warnings = [
         category: WarningCategory.Replaced,
         message: DefaultMessages.replaced("Zoom/Pan Options"),
         coreVersion: "0.6.0"
+    },
+    {
+        id: 308,
+        module: "vtta-dndbeyond",
+        category: WarningCategory.Replaced,
+        message: DefaultMessages.replaced("D&D Beyond Importer"),
+        coreVersion: "0.6.0"
+    },
+    {
+        id: 309,
+        module: "ddb-importer",
+        category: WarningCategory.Replaced,
+        message: DefaultMessages.replaced("D&D Beyond Importer (by MrPrimate)"),
+        coreVersion: "0.6.0"
+    },
+    {
+        id: 310,
+        module: "fvtt-party",
+        category: WarningCategory.Replaced,
+        message: DefaultMessages.replaced("Party Overview") + " It's a different module, despite the same name.",
+        coreVersion: "0.6.0"
+    },
+    {
+        id: 311,
+        module: "vtta-party",
+        category: WarningCategory.Replaced,
+        message: `<b><u>Virtual Tabletop Assets - Party Overview</u></b> is no longer being maintained and could break with any Foundry update.<br>
+        <p>For a module that has has a similar Party Overview functionality, try <b><u>Party Overview</u></b>.</p>
+        For a module that lets you create token tooltips, try <b><u>Illandril's Token Tooltips</u></b> or <b><u>Token Tooltip Alt</u></b>`,
+        coreVersion: "0.7.5"
+    },
+    {
+        id: 312,
+        module: "roll20npcimporter",
+        category: WarningCategory.Replaced,
+        message: DefaultMessages.replaced("R20 Converter") + " It is available via Kakaroto's Patreon.",
+        coreVersion: "0.6.6"
     }
 ]
