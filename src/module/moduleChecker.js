@@ -81,7 +81,7 @@ export class ModuleChecker {
             if(isNewerVersion(warning.coreVersion, game.data.version)) {
                 continue;
             }
-            if(warning.highestVersion && isNewerVersion(warning.highestVersion, module.version)) {
+            if(warning.highestVersion && isNewerVersion(module.version, warning.highestVersion)) {
                 continue;
             }
 
