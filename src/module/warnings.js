@@ -2,7 +2,7 @@ export const WarningCategory = Object.freeze({
     Core: "core", // The module's functionality has been integrated into core. (0-199)
     Broken:  "broken", // The module no longer works (200-299)
     Replaced: "replaced", // The module is no longer maintained and has been replaced by another module (300-499)
-    Relocated: "relocated" // The module has been officially relocated and all future updates will come from another manifest (500-599)
+    Delisted: "delisted" // The module has been removed from Foundry's module list because it is no longer maintained (500-699)
 })
 
 class DefaultMessages {
@@ -15,7 +15,7 @@ class DefaultMessages {
     }
 
     static broken() {
-        let message = "{} is no longer being maintained and could break with any Foundry update, if it hasn't already. It is recommended that you uninstall it.";
+        let message = "{} is partially broken and is no longer being maintained. As it could break further with any Foundry update, it is recommended that you uninstall it.";
         return message;
     }
 
@@ -23,6 +23,12 @@ class DefaultMessages {
         let message = "{} is no longer being maintained and could break with any Foundry update, if it hasn't already. It is recommended that you replace it with ";
         message += "<b><u>" + replacement + "</u></b>.";
         return message;
+    }
+
+    static delisted() {
+        let message = "{} has been removed from Foundry's official module repository because it is no longer being maintatined."
+        message += "You should consider uninstalling it, and it could break with any Foundry update."
+        return message
     }
 }
 
@@ -85,7 +91,7 @@ export const warnings = [
         module: "token-owner-selection-tweak",
         category: WarningCategory.Core,
         message: DefaultMessages.core(),
-        coreVersion: "0.7.5"
+        coreVersion: "0.7.1"
     },
     {
         id: 7,
@@ -137,6 +143,20 @@ export const warnings = [
         category: WarningCategory.Broken,
         message: DefaultMessages.broken(),
         coreVersion: "0.7.9"
+    },
+    {
+        id: 206,
+        module: "mindmap",
+        category: WarningCategory.Broken,
+        message: DefaultMessages.broken(),
+        coreVersion: "0.7.5"
+    },
+    {
+        id: 207,
+        module: "conditions5e",
+        category: WarningCategory.Broken,
+        message: DefaultMessages.broken(),
+        coreVersion: "0.7.5"
     },
 
     //Replaced Warnings (300-499)
@@ -234,5 +254,85 @@ export const warnings = [
         category: WarningCategory.Replaced,
         message: DefaultMessages.replaced("R20 Converter") + " It is available via Kakaroto's Patreon.",
         coreVersion: "0.6.6"
+    },
+    {
+        id: 313,
+        module: "mess",
+        category: WarningCategory.Replaced,
+        message: DefaultMessages.delisted() + `<p>For a module that handles rolls in the same way, try <b><u>Mars 5e</u></b>.</p>
+        For a module that enhances templates, including video templates, try <b><u>TOken Magic FX</u></b>`,
+        coreVersion: "0.7.5"
+    },
+    {
+        id: 314,
+        module: "canvas-scroll",
+        category: WarningCategory.Replaced,
+        message: DefaultMessages.replaced("Zoom/Pan Options"),
+        coreVersion: "0.7.5"
+    },
+    {
+        id: 315,
+        module: "token-action-animations",
+        category: WarningCategory.Replaced,
+        message: DefaultMessages.replaced("Automated Animations"),
+        coreVersion: "0.7.5"
+    },
+    {
+        id: 316,
+        module: "AdvancedLightingToolkit",
+        category: WarningCategory.Replaced,
+        message: DefaultMessages.replaced("Community Lighting by Blitz"),
+        coreVersion: "0.7.5"
+    },
+    {
+        id: 317,
+        module: "combatready",
+        category: WarningCategory.Replaced,
+        message: DefaultMessages.replaced("Monk's Little Details"),
+        coreVersion: "0.7.9"
+    },
+
+    //Delisted Warnings (500-699)
+    {
+        id: 500,
+        module: "fog-tools",
+        category: WarningCategory.Delisted,
+        message: DefaultMessages.delisted(),
+        coreVersion: "0.8.0"
+    },
+    {
+        id: 501,
+        module: "self-token-delete",
+        category: WarningCategory.Delisted,
+        message: DefaultMessages.delisted(),
+        coreVersion: "0.7.5"
+    },
+    {
+        id: 502,
+        module: "vtta-iconizer",
+        category: WarningCategory.Delisted,
+        message: DefaultMessages.delisted(),
+        coreVersion: "0.8.0"
+    },
+    {
+        id: 503,
+        module: "vtta-didyouknow",
+        category: WarningCategory.Delisted,
+        message: DefaultMessages.delisted(),
+        coreVersion: "0.8.0"
+    },
+    {
+        id: 504,
+        module: "streaming-mode",
+        category: WarningCategory.Delisted,
+        message: DefaultMessages.delisted(),
+        coreVersion: "0.8.0"
+    },
+    {
+        id: 505,
+        module: "cursor-hider",
+        category: WarningCategory.Delisted,
+        message: DefaultMessages.delisted(),
+        coreVersion: "0.8.0"
     }
 ]
