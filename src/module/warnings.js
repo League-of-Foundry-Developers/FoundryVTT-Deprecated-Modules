@@ -208,7 +208,9 @@ export const warnings = [
         module: "ddb-importer",
         category: WarningCategory.Replaced,
         message: DefaultMessages.replaced("D&D Beyond Importer (by MrPrimate)"),
-        coreVersion: "0.6.0"
+        coreVersion: "0.6.0",
+        highestVersion: "0.1.9",
+        inactive: true
     },
     {
         id: 310,
