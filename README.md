@@ -5,47 +5,6 @@ Deprecated Modules is smart about which version of Foundry you're using when it 
 
 ![Example](ExampleWarning.png)
 
-# List of Deprecated Modules
-
-### Integrated Into Core
-
-These modules provided functionality that is now provided by core Foundry, and so are no longer needed. (You will not receive a warning if you're using a Foundry version earlier than when a module was integrated into Foundry.)
-
-* Deselection
-* QuickSceneView
-* Batch Permissions by Folder
-* Note Text Color
-* No Summon Vision
-* No Accidental Back Button
-* Token Owner Selection Tweak
-* Return to Setup
-
-### Replaced
-
-These modules have stopped being maintained, and are either broken or could be broken with any Foundry update. However, all modules in this category have a recommended module that will replicate or even improve the functionality of the replaced module. The suggested replacements will be in parentheses.
-
-* Dynamic Effects (Dynamic After Effects)
-* Teleport (Multilevel Tokens)
-* Dancing Lights (Community Lighting)
-* Darker Vision for 5e (Perfect Vision)
-* Darkvision 5e (Perfect Vision)
-* Minor QOL (Midi QOL)
-* GM Background (Scenery)
-* Cursor Zoom (Zoom/Pan Options)
-* VTTA - D&D Beyond Integration (D&D Beyond Importer)
-* VTTA - Party Overview (Party Overview, Illandril's Token Tooltips/Token Tooltip Alt)
-
-### Broken
-
-These modules no longer work in the most recent versions of Foundry, and do not have any modules replicating their functionality.
-
-* Chat Auto-Loader
-* Chat Colors & More
-* Critical Fumble
-* Foundry Patrol
-* Route Finder
-* Bullseye
-
 # Module Developers
 
 Deprecated Modules is integrated with Manifest+ to make it easier for you to mark your module as deprecated when you stop maintaining it.
