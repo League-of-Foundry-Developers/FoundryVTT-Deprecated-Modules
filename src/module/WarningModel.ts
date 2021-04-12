@@ -11,9 +11,11 @@ export class WarningModel {
 
   urlModuleReplaced?: string;
   urlFoundryHub?: string;
+
   moduleSuggested? : string;
-  urlModuleSuggested? : string;
-  stateModuleSuggested? : ModuleStateCategory;
+  moduleSuggestedUrl? : string;
+  moduleSuggestedState? : ModuleStateCategory;
+  moduleSuggestedManifestJson?:string;
 
   constructor(
     id: number,
@@ -25,8 +27,9 @@ export class WarningModel {
     highestVersion?:string,
     urlModuleReplaced?: string,
     urlFoundryHub?: string,
-    urlModuleSuggested? : string,
-    stateModuleSuggested? : ModuleStateCategory,
+    moduleSuggestedUrl? : string,
+    moduleSuggestedState? : ModuleStateCategory,
+    moduleSuggestedManifestJson?:string
   ){
     this.id = id;
     this.module = module;
@@ -37,7 +40,8 @@ export class WarningModel {
     this.highestVersion = highestVersion,
     this.urlModuleReplaced = urlModuleReplaced;
     this.urlFoundryHub = urlFoundryHub;
-    this.urlModuleSuggested = urlModuleSuggested;
-    this.stateModuleSuggested = stateModuleSuggested;
+    this.moduleSuggestedUrl = moduleSuggestedUrl;
+    this.moduleSuggestedState = moduleSuggestedState;
+    this.moduleSuggestedManifestJson = moduleSuggestedManifestJson;
   }
 }

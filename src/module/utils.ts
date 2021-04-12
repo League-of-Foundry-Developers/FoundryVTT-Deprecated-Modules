@@ -30,8 +30,8 @@ export const printWarningMessage = function(warningModel:WarningModel) {
 
   else if(warningModel.category == WarningCategory.Broken) {
       let message = "{} is partially broken and is no longer being maintained. As it could break further with any Foundry update, it is recommended that you uninstall it.";
-      if(warningModel.urlModuleSuggested){
-        message += "<b><u>" + "<a href='"+warningModel.urlModuleSuggested+"'>"+warningModel.moduleSuggested+"</a>" + "</u></b>.";
+      if(warningModel.moduleSuggestedUrl){
+        message += "<b><u>" + "<a href='"+warningModel.moduleSuggestedUrl+"'>"+warningModel.moduleSuggested+"</a>" + "</u></b>.";
       } else if(warningModel.moduleSuggested){
         message += "<b><u>" + warningModel.moduleSuggested + "</u></b>.";
       }else{
@@ -41,8 +41,8 @@ export const printWarningMessage = function(warningModel:WarningModel) {
 
   else if(warningModel.category == WarningCategory.Replaced) {
       let message = "{} is no longer being maintained and could break with any Foundry update, if it hasn't already. It is recommended that you replace it with ";
-      if(warningModel.urlModuleSuggested){
-        message += "<b><u>" + "<a href='"+warningModel.urlModuleSuggested+"'>"+warningModel.moduleSuggested+"</a>" + "</u></b>.";
+      if(warningModel.moduleSuggestedUrl){
+        message += "<b><u>" + "<a href='"+warningModel.moduleSuggestedUrl+"'>"+warningModel.moduleSuggested+"</a>" + "</u></b>.";
       } else if(warningModel.moduleSuggested){
         message += "<b><u>" + warningModel.moduleSuggested + "</u></b>.";
       }else{
@@ -53,8 +53,8 @@ export const printWarningMessage = function(warningModel:WarningModel) {
   else if(warningModel.category == WarningCategory.Delisted) {
       let message = "{} has been removed from Foundry's official module repository because it is no longer being maintained."
       message += "You should consider uninstalling it, and it could break with any Foundry update."
-      if(warningModel.urlModuleSuggested){
-        message += "<b><u>" + "<a href='"+warningModel.urlModuleSuggested+"'>"+warningModel.moduleSuggested+"</a>" + "</u></b>.";
+      if(warningModel.moduleSuggestedUrl){
+        message += "<b><u>" + "<a href='"+warningModel.moduleSuggestedUrl+"'>"+warningModel.moduleSuggested+"</a>" + "</u></b>.";
       } else if(warningModel.moduleSuggested){
         message += "<b><u>" + warningModel.moduleSuggested + "</u></b>.";
       }else{
@@ -65,8 +65,8 @@ export const printWarningMessage = function(warningModel:WarningModel) {
   else if(warningModel.category == WarningCategory.Abbandoned) {
     let message = "{} his no longer being maintained."
     message += "You should consider uninstalling it, and it could break with any Foundry update."
-    if(warningModel.urlModuleSuggested){
-      message += "<b><u>" + "<a href='"+warningModel.urlModuleSuggested+"'>"+warningModel.moduleSuggested+"</a>" + "</u></b>.";
+    if(warningModel.moduleSuggestedUrl){
+      message += "<b><u>" + "<a href='"+warningModel.moduleSuggestedUrl+"'>"+warningModel.moduleSuggested+"</a>" + "</u></b>.";
     } else if(warningModel.moduleSuggested){
       message += "<b><u>" + warningModel.moduleSuggested + "</u></b>.";
     }else{

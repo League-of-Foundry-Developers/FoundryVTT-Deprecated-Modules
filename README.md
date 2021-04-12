@@ -43,7 +43,7 @@ These modules has been integrated into core Foundry, so it should be uninstalled
 |5   |No back (noback)|0.7.5||
 |6   |Token Owner Selection (token-owner-selection-tweak)|0.7.1||
 |7   |[Return to setup (returntosetup)](https://github.com/ardittristan/VTTReturnToSetup)|0.7.4||
-## Broken Warnings
+## Broken Warnings or Abbandoned Warnings
 
 These modules is partially broken and is no longer being maintained. As it could break further with any Foundry update, it is recommended that you uninstall it.";
 
@@ -91,25 +91,14 @@ You should consider uninstalling it, and it could break with any Foundry update.
 
 |ID|Module Deprecated | Foundry Version | Note |
 |--- |--- |--- |--- |
-|500 |[ (fog-tools)]()
+|500 |[Fog Tools (fog-tools)](https://github.com/VanceCole/fog-tools.git)|0.8.0||
+|501 |[Self Token Delete for Foundry VTT (self-token-delete)](https://github.com/Corvimae/fvtt-self-token-delete)|0.7.5||
+|502 |[VTTA Iconizer (vtta-iconizer)](https://github.com/VTTAssets/vtta-iconizer)
 
-{
-        id: 500,
-        module: "fog-tools",
-        category: WarningCategory.Delisted,
-        message: DefaultMessages.delisted(),
-        coreVersion: "0.8.0"
-    },
-    {
-        id: 501,
-        module: "self-token-delete",
-        category: WarningCategory.Delisted,
-        message: DefaultMessages.delisted(),
-        coreVersion: "0.7.5"
-    },
+  
     {
         id: 502,
-        module: "vtta-iconizer",
+        module: "",
         category: WarningCategory.Delisted,
         message: DefaultMessages.delisted(),
         coreVersion: "0.8.0"
@@ -135,6 +124,7 @@ You should consider uninstalling it, and it could break with any Foundry update.
         message: DefaultMessages.delisted(),
         coreVersion: "0.8.0"
     }
+
 
 ## Beta or on Developing 
 
