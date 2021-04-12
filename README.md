@@ -43,6 +43,7 @@ These modules has been integrated into core Foundry, so it should be uninstalled
 |5   |No back (noback)|0.7.5||
 |6   |Token Owner Selection (token-owner-selection-tweak)|0.7.1||
 |7   |[Return to setup (returntosetup)](https://github.com/ardittristan/VTTReturnToSetup)|0.7.4||
+
 ## Broken Warnings or Abbandoned Warnings
 
 These modules is partially broken and is no longer being maintained. As it could break further with any Foundry update, it is recommended that you uninstall it.";
@@ -54,8 +55,8 @@ These modules is partially broken and is no longer being maintained. As it could
 |202 |[Critical Fumble (critical-fumble)](https://github.com/JacobMcAuley/critical-fumble )|0.6.6||
 |203 |[Foundry Token Patrol (foundry-patrol)](https://github.com/JacobMcAuley/foundry-patrol )|0.7.5| Is still followed on reddit and discord probably someone will probably retake the project|
 |204 |Route Finder (route-finder)|0.7.5||
-|205 |[Bullseye (bullseye)](https://gitlab.com/Ionshard/foundry-vtt-bullseye)|0.7.9|These projects are valuable alternatives [Easy Target (easy-target)](https://bitbucket.org/Fyorl/easy-target/src/master/ ) and [Target Enhancements -- FoundryVTT Module (target-enhancements p4535992 fork)](https://github.com/p4535992/target-enhancements ) |
-|206 |[Mindmap (mindmap)](https://gitlab.com/moerills-fvtt-modules/graphs)|0.7.5| There is a on developing project for try to revive this [Mindmap (foundryvtt-mindmap)](https://github.com/p4535992/foundryvtt-mindmap)|
+|205 |[Bullseye (bullseye)](https://gitlab.com/Ionshard/foundry-vtt-bullseye)|0.7.9|These projects are valuable alternatives [Easy Target (easy-target)](https://bitbucket.org/Fyorl/easy-target/src/master/ ) and [Target Enhancements -- FoundryVTT Module (target-enhancements p4535992 fork)](https://github.com/p4535992/target-enhancements ) on developing|
+|206 |[Mindmap (mindmap)](https://gitlab.com/moerills-fvtt-modules/graphs)|0.7.5| There is a on developing project for try to revive this [Mindmap (foundryvtt-mindmap)](https://github.com/p4535992/foundryvtt-mindmap) on developing|
 |207 |[conditions5e](https://github.com/trdischat/conditions5e )|0.7.5|Just use [CUB](https://github.com/death-save/combat-utility-belt )|
 
 ## Replaced Warnings
@@ -75,7 +76,7 @@ These modules is no longer being maintained and could break with any Foundry upd
 |308 |[VTTA D&D Beyond Importer (vtta-dndbeyond)](https://github.com/VTTAssets/vtta-dndbeyond)|0.6.0|Use instead [D&D Beyond Importer (ddb-importer) by Mr Primate](https://github.com/MrPrimate/ddb-importer)|
 |309 |[D&D Beyond Importer (ddb-importer)](https://github.com/sillvva/foundry-vtt-modules/tree/master/ddb-importer)|0.6.0|Use instead [D&D Beyond Importer (ddb-importer) by Mr Primate](https://github.com/MrPrimate/ddb-importer)|
 |310 |[fvtt-party (fvtt-party)](https://github.com/shwill/fvtt-party)|0.6.0|Use instead [Party Overview by LoFD (party-overview)](https://github.com/League-of-Foundry-Developers/party-overview )|
-|311 |[vtta-party (vtta-party)](https://github.com/VTTAssets/vtta-party)|0.6.0|Use instead [Party Overview by LoFD (party-overview)](https://github.com/League-of-Foundry-Developers/party-overview )|
+|311 |[vtta-party (vtta-party)](https://github.com/VTTAssets/vtta-party)|0.6.0|Use instead [Party Overview by LoFD (party-overview)](https://github.com/League-of-Foundry-Developers/party-overview ) or [Illandril's Token Tooltip](https://github.com/illandril/FoundryVTT-token-tooltips) or [Token Tooltip Alt](https://github.com/bmarian/token-tooltip-alt)|
 |312 |[Roll20 NPC Importer, for 5e (roll20npcimporter)](https://github.com/syl3r86/roll20npcimporter)|0.6.6|Use instead the tool 'R20 Converteer' It is available via Kakaroto's Patreon.|
 |313 |[M.E.S.S. Moerill’s Enhancing Super Suite (mess)](https://github.com/Moerill/mess )|0.7.5|Use instead [MARS 5e - Moerills alternative rolling style for 5e (mars-5e)](https://github.com/Moerill/fvtt-mars-5e )|
 |314 |[Canvas Scroll (canvas-scroll)](https://github.com/ElfFriend-DnD/foundryvtt-canvasScroll)|0.7.5|Use instead [Zoom/Pan Options (zoom-pan-options)](https://github.com/itamarcu/ZoomPanOptions )|
@@ -83,6 +84,7 @@ These modules is no longer being maintained and could break with any Foundry upd
 |316 |[Advanced Lighting Toolkit (AdvancedLightingToolkit)](https://github.com/BlitzKraig/fvtt-AdvancedLightingToolkit)|0.7.5|Use instead [Community Lighting for FVTT (CommunityLighting)](https://github.com/BlitzKraig/fvtt-CommunityLighting )|
 |317 |[Combat Ready (combatready)](https://github.com/smilligan93/combatready)|0.7.9|Use instead [Monk's Little Details (monks-little-details)](https://github.com/ironmonk88/monks-little-details)|
 |318 |[Pings (pings)](https://gitlab.com/foundry-azzurite/pings)|0.7.9|Use instead [PnP - Pointer and Pings! (pointer)](https://github.com/Moerill/fvtt-pointer )
+|319 |[Target Enhancements (target-enhancements)](https://github.com/eadorin/target-enhancements)|0.7.9|Use instead [Target Enhancements (target-enhancements p4535992 fork)](https://github.com/p4535992/target-enhancements ) on developing|
 
 ## Delisted Warnings
 

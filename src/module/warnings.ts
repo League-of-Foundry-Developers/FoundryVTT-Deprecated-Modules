@@ -205,11 +205,11 @@ export const warnings:WarningModel[] = [
         category: WarningCategory.Broken,
         message: "",
         coreVersion: "0.7.9",
-        moduleSuggested: [],
-        moduleSuggestedTitle: [],
-        moduleSuggestedUrl: [],
-        moduleSuggestedManifestJson: [],
-        moduleSuggestedState: []
+        moduleSuggested: ["target-enhancements"],
+        moduleSuggestedTitle: ["Target Enhancements fork by p4535992"],
+        moduleSuggestedUrl: ["https://github.com/p4535992/target-enhancements"],
+        moduleSuggestedManifestJson: ["https://raw.githubusercontent.com/p4535992/target-enhancements/master/src/module.json"],
+        moduleSuggestedState: [ModuleStateCategory.DEVELOPING]
     },
     {
         id: 206,
@@ -217,11 +217,11 @@ export const warnings:WarningModel[] = [
         category: WarningCategory.Broken,
         message: "",
         coreVersion: "0.7.5",
-        moduleSuggested: [],
-        moduleSuggestedTitle: [],
-        moduleSuggestedUrl: [],
-        moduleSuggestedManifestJson: [],
-        moduleSuggestedState: []
+        moduleSuggested: ["foundryvtt-mindmap"],
+        moduleSuggestedTitle: ["M.I.N.D.M.A.P."],
+        moduleSuggestedUrl: ["https://github.com/p4535992/foundryvtt-mindmap"],
+        moduleSuggestedManifestJson: ["https://raw.githubusercontent.com/p4535992/foundryvtt-mindmap/master/src/module.json"],
+        moduleSuggestedState: [ModuleStateCategory.DEVELOPING]
     },
     {
         id: 207,
@@ -229,11 +229,11 @@ export const warnings:WarningModel[] = [
         category: WarningCategory.Broken,
         message: "",
         coreVersion: "0.7.5",
-        moduleSuggested: [],
-        moduleSuggestedTitle: [],
-        moduleSuggestedUrl: [],
-        moduleSuggestedManifestJson: [],
-        moduleSuggestedState: []
+        moduleSuggested: ["combat-utility-belt"],
+        moduleSuggestedTitle: ["Combat Utility Belt"],
+        moduleSuggestedUrl: ["https://github.com/death-save/combat-utility-belt"],
+        moduleSuggestedManifestJson: ["https://raw.githubusercontent.com/death-save/combat-utility-belt/master/module.json"],
+        moduleSuggestedState: [ModuleStateCategory.STABLE]
     },
 
     //Replaced Warnings (300-499)
@@ -241,25 +241,25 @@ export const warnings:WarningModel[] = [
         id: 300,
         module: "dynamiceffects",
         category: WarningCategory.Replaced,
-        message: "Dynamic Active Effects",
+        message: "",
         coreVersion: "0.7.0",
-        moduleSuggested: [],
-        moduleSuggestedTitle: [],
-        moduleSuggestedUrl: [],
-        moduleSuggestedManifestJson: [],
-        moduleSuggestedState: []
+        moduleSuggested: ["dae"],
+        moduleSuggestedTitle: ["Dynamic Active Effects"],
+        moduleSuggestedUrl: ["https://gitlab.com/tposney/dae"],
+        moduleSuggestedManifestJson: ["https://gitlab.com/tposney/dae/-/raw/master/src/module.json"],
+        moduleSuggestedState: [ModuleStateCategory.STABLE]
     },
     {
         id: 301,
         module: "teleport",
         category: WarningCategory.Replaced,
-        message: "Multilevel Tokens",
+        message: "",
         coreVersion: "0.7.0",
-        moduleSuggested: [],
-        moduleSuggestedTitle: [],
-        moduleSuggestedUrl: [],
-        moduleSuggestedManifestJson: [],
-        moduleSuggestedState: []
+        moduleSuggested: ["foundryvtt-multilevel-tokens"],
+        moduleSuggestedTitle: ["Multilevel Tokens"],
+        moduleSuggestedUrl: ["https://github.com/grandseiken/foundryvtt-multilevel-tokens"],
+        moduleSuggestedManifestJson: ["https://raw.githubusercontent.com/grandseiken/foundryvtt-multilevel-tokens/master/module.json"],
+        moduleSuggestedState: [ModuleStateCategory.STABLE]
     },
     {
         id: 302,
@@ -277,61 +277,61 @@ export const warnings:WarningModel[] = [
         id: 303,
         module: "darker-vision-for-5e",
         category: WarningCategory.Replaced,
-        message: "Perfect Vision",
+        message: "",
         coreVersion: "0.7.5",
-        moduleSuggested: [],
-        moduleSuggestedTitle: [],
-        moduleSuggestedUrl: [],
-        moduleSuggestedManifestJson: [],
-        moduleSuggestedState: []
+        moduleSuggested: ["perfect-vision"],
+        moduleSuggestedTitle: ["Perfect Vision"],
+        moduleSuggestedUrl: ["https://github.com/dev7355608/perfect-vision"],
+        moduleSuggestedManifestJson: ["https://raw.githubusercontent.com/dev7355608/perfect-vision/main/module.json"],
+        moduleSuggestedState: [ModuleStateCategory.STABLE]
     },
     {
         id: 304,
         module: "darkvision5e",
         category: WarningCategory.Replaced,
-        message: "Perfect Vision",
+        message: "",
         coreVersion: "0.7.5",
-        moduleSuggested: [],
-        moduleSuggestedTitle: [],
-        moduleSuggestedUrl: [],
-        moduleSuggestedManifestJson: [],
-        moduleSuggestedState: []
+        moduleSuggested: ["perfect-vision"],
+        moduleSuggestedTitle: ["Perfect Vision"],
+        moduleSuggestedUrl: ["https://github.com/dev7355608/perfect-vision"],
+        moduleSuggestedManifestJson: ["https://raw.githubusercontent.com/dev7355608/perfect-vision/main/module.json"],
+        moduleSuggestedState: [ModuleStateCategory.STABLE]
     },
     {
         id: 305,
         module: "minor-qol",
         category: WarningCategory.Replaced,
-        message: "Midi Quality of Life Improvements",
+        message: "",
         coreVersion: "0.7.5",
-        moduleSuggested: [],
-        moduleSuggestedTitle: [],
-        moduleSuggestedUrl: [],
-        moduleSuggestedManifestJson: [],
-        moduleSuggestedState: []
+        moduleSuggested: ["midi-qol"],
+        moduleSuggestedTitle: ["Midi Quality of Life Improvements"],
+        moduleSuggestedUrl: ["https://gitlab.com/tposney/midi-qol"],
+        moduleSuggestedManifestJson: ["https://gitlab.com/tposney/midi-qol/-/raw/master/src/module.json"],
+        moduleSuggestedState: [ModuleStateCategory.STABLE]
     },
     {
         id: 306,
         module: "gm-bg",
         category: WarningCategory.Replaced,
-        message: "Scenery",
+        message: "",
         coreVersion: "0.7.5",
-        moduleSuggested: [],
-        moduleSuggestedTitle: [],
-        moduleSuggestedUrl: [],
-        moduleSuggestedManifestJson: [],
-        moduleSuggestedState: []
+        moduleSuggested: ["scenery"],
+        moduleSuggestedTitle: ["Scenery"],
+        moduleSuggestedUrl: ["https://github.com/VanceCole/scenery"],
+        moduleSuggestedManifestJson: ["https://raw.githubusercontent.com/VanceCole/scenery/master/module.json"],
+        moduleSuggestedState: [ModuleStateCategory.STABLE]
     },
     {
         id: 307,
         module: "cursor-zoom",
         category: WarningCategory.Replaced,
-        message: "Zoom/Pan Options",
+        message: "",
         coreVersion: "0.6.0",
-        moduleSuggested: [],
-        moduleSuggestedTitle: [],
-        moduleSuggestedUrl: [],
-        moduleSuggestedManifestJson: [],
-        moduleSuggestedState: []
+        moduleSuggested: ["zoom-pan-options"],
+        moduleSuggestedTitle: ["Zoom/Pan Options"],
+        moduleSuggestedUrl: ["https://github.com/itamarcu/ZoomPanOptions"],
+        moduleSuggestedManifestJson: ["https://raw.githubusercontent.com/itamarcu/ZoomPanOptions/master/module.json"],
+        moduleSuggestedState: [ModuleStateCategory.STABLE]
     },
     {
         id: 308,
@@ -339,11 +339,11 @@ export const warnings:WarningModel[] = [
         category: WarningCategory.Replaced,
         message: "D&D Beyond Importer",
         coreVersion: "0.6.0",
-        moduleSuggested: [],
-        moduleSuggestedTitle: [],
-        moduleSuggestedUrl: [],
-        moduleSuggestedManifestJson: [],
-        moduleSuggestedState: []
+        moduleSuggested: ["ddb-importer"],
+        moduleSuggestedTitle: ["D&D Beyond Importer by mr Primate"],
+        moduleSuggestedUrl: ["https://github.com/MrPrimate/ddb-importer"],
+        moduleSuggestedManifestJson: ["https://raw.githubusercontent.com/MrPrimate/ddb-importer/master/module.json"],
+        moduleSuggestedState: [ModuleStateCategory.STABLE]
     },
     {
         id: 309,
@@ -353,11 +353,11 @@ export const warnings:WarningModel[] = [
         coreVersion: "0.6.0",
         highestVersion: "0.1.9",
         inactive: true,
-        moduleSuggested: [],
-        moduleSuggestedTitle: [],
-        moduleSuggestedUrl: [],
-        moduleSuggestedManifestJson: [],
-        moduleSuggestedState: []
+        moduleSuggested: ["ddb-importer"],
+        moduleSuggestedTitle: ["D&D Beyond Importer by mr Primate"],
+        moduleSuggestedUrl: ["https://github.com/MrPrimate/ddb-importer"],
+        moduleSuggestedManifestJson: ["https://raw.githubusercontent.com/MrPrimate/ddb-importer/master/module.json"],
+        moduleSuggestedState: [ModuleStateCategory.STABLE]
     },
     {
         id: 310,
@@ -365,11 +365,11 @@ export const warnings:WarningModel[] = [
         category: WarningCategory.Replaced,
         message: "Party Overview" + " It's a different module, despite the same name.",
         coreVersion: "0.6.0",
-        moduleSuggested: [],
-        moduleSuggestedTitle: [],
-        moduleSuggestedUrl: [],
-        moduleSuggestedManifestJson: [],
-        moduleSuggestedState: []
+        moduleSuggested: ["party-overview", "illandril-token-tooltips", "token-tooltip-alt"],
+        moduleSuggestedTitle: ["Party Overview by LoFD", "Illandril's Token Tooltip", "Token Tooltip Alt"],
+        moduleSuggestedUrl: ["https://github.com/League-of-Foundry-Developers/party-overview", "https://github.com/illandril/FoundryVTT-token-tooltips", "https://github.com/bmarian/token-tooltip-alt"],
+        moduleSuggestedManifestJson: ["https://raw.githubusercontent.com/League-of-Foundry-Developers/party-overview/master/module.json","https://raw.githubusercontent.com/illandril/FoundryVTT-token-tooltips/master/module/module.json", "https://raw.githubusercontent.com/bmarian/token-tooltip-alt/master/module.json"],
+        moduleSuggestedState: [ModuleStateCategory.STABLE, ModuleStateCategory.STABLE, ModuleStateCategory.STABLE]
     },
     {
         id: 311,
@@ -379,11 +379,11 @@ export const warnings:WarningModel[] = [
         <p>For a module that has has a similar Party Overview functionality, try <b><u>Party Overview</u></b>.</p>
         For a module that lets you create token tooltips, try <b><u>Illandril's Token Tooltips</u></b> or <b><u>Token Tooltip Alt</u></b>`,
         coreVersion: "0.7.5",
-        moduleSuggested: [],
-        moduleSuggestedTitle: [],
-        moduleSuggestedUrl: [],
-        moduleSuggestedManifestJson: [],
-        moduleSuggestedState: []
+        moduleSuggested: ["party-overview", "illandril-token-tooltips", "token-tooltip-alt"],
+        moduleSuggestedTitle: ["Party Overview by LoFD", "Illandril's Token Tooltip", "Token Tooltip Alt"],
+        moduleSuggestedUrl: ["https://github.com/League-of-Foundry-Developers/party-overview", "https://github.com/illandril/FoundryVTT-token-tooltips", "https://github.com/bmarian/token-tooltip-alt"],
+        moduleSuggestedManifestJson: ["https://raw.githubusercontent.com/League-of-Foundry-Developers/party-overview/master/module.json","https://raw.githubusercontent.com/illandril/FoundryVTT-token-tooltips/master/module/module.json", "https://raw.githubusercontent.com/bmarian/token-tooltip-alt/master/module.json"],
+        moduleSuggestedState: [ModuleStateCategory.STABLE, ModuleStateCategory.STABLE, ModuleStateCategory.STABLE]
     },
     {
         id: 312,
@@ -402,25 +402,25 @@ export const warnings:WarningModel[] = [
         module: "mess",
         category: WarningCategory.Replaced,
         message: `<p>For a module that handles rolls in the same way, try <b><u>Mars 5e</u></b>.</p>
-        For a module that enhances templates, including video templates, try <b><u>TOken Magic FX</u></b>`,
+        For a module that enhances templates, including video templates, try <b><u>Token Magic FX</u></b>`,
         coreVersion: "0.7.5",
-        moduleSuggested: [],
-        moduleSuggestedTitle: [],
-        moduleSuggestedUrl: [],
-        moduleSuggestedManifestJson: [],
-        moduleSuggestedState: []
+        moduleSuggested: ["mars-5e"],
+        moduleSuggestedTitle: ["MARS 5e - Moerills alternative rolling style for 5e"],
+        moduleSuggestedUrl: ["https://github.com/Moerill/fvtt-mars-5e"],
+        moduleSuggestedManifestJson: ["https://raw.githubusercontent.com/Moerill/fvtt-mars-5e/master/module.json"],
+        moduleSuggestedState: [ModuleStateCategory.STABLE]
     },
     {
         id: 314,
         module: "canvas-scroll",
         category: WarningCategory.Replaced,
-        message: "Zoom/Pan Options",
+        message: "",
         coreVersion: "0.7.5",
-        moduleSuggested: [],
-        moduleSuggestedTitle: [],
-        moduleSuggestedUrl: [],
-        moduleSuggestedManifestJson: [],
-        moduleSuggestedState: []
+        moduleSuggested: ["zoom-pan-options"],
+        moduleSuggestedTitle: ["Zoom/Pan Options"],
+        moduleSuggestedUrl: ["https://github.com/itamarcu/ZoomPanOptions"],
+        moduleSuggestedManifestJson: ["https://raw.githubusercontent.com/itamarcu/ZoomPanOptions/master/module.json"],
+        moduleSuggestedState: [ModuleStateCategory.STABLE]
     },
     {
         id: 315,
@@ -428,11 +428,11 @@ export const warnings:WarningModel[] = [
         category: WarningCategory.Replaced,
         message: "Automated Animations",
         coreVersion: "0.7.5",
-        moduleSuggested: [],
-        moduleSuggestedTitle: [],
-        moduleSuggestedUrl: [],
-        moduleSuggestedManifestJson: [],
-        moduleSuggestedState: []
+        moduleSuggested: ["automated-jb2a-animations"],
+        moduleSuggestedTitle: ["Automated Animations DnD5e"],
+        moduleSuggestedUrl: ["https://github.com/otigon/automated-jb2a-animations"],
+        moduleSuggestedManifestJson: ["https://raw.githubusercontent.com/otigon/automated-jb2a-animations/main/module.json"],
+        moduleSuggestedState: [ModuleStateCategory.STABLE]
     },
     {
         id: 316,
@@ -470,6 +470,19 @@ export const warnings:WarningModel[] = [
       moduleSuggestedUrl: ["https://github.com/Moerill/fvtt-pointer"],
       moduleSuggestedManifestJson: ["https://raw.githubusercontent.com/Moerill/fvtt-pointer/master/module.json"],
       moduleSuggestedState: [ModuleStateCategory.STABLE]
+    },
+    {
+        id: 319,
+        module: "target-enhancements",
+        category: WarningCategory.Replaced,
+        message: "",
+        coreVersion: "0.7.9",
+        moduleUrl: "https://github.com/eadorin/target-enhancements",
+        moduleSuggested: ["target-enhancements"],
+        moduleSuggestedTitle: ["Target Enhancements fork by p4535992"],
+        moduleSuggestedUrl: ["https://github.com/p4535992/target-enhancements"],
+        moduleSuggestedManifestJson: ["https://raw.githubusercontent.com/p4535992/target-enhancements/master/src/module.json"],
+        moduleSuggestedState: [ModuleStateCategory.DEVELOPING]
     },
 
     //Delisted Warnings (500-699)
