@@ -26,7 +26,7 @@ class DefaultMessages {
     }
 
     static delisted() {
-        let message = "{} has been removed from Foundry's official module repository because it is no longer being maintatined."
+        let message = "{} has been removed from Foundry's official module repository because it is no longer being maintained."
         message += "You should consider uninstalling it, and it could break with any Foundry update."
         return message
     }
@@ -291,6 +291,13 @@ export const warnings = [
         message: DefaultMessages.replaced("Monk's Little Details"),
         coreVersion: "0.7.9"
     },
+    {
+      id: 318,
+      module: "pings",
+      category: WarningCategory.Replaced,
+      message: DefaultMessages.replaced("Dynamic Active Effects"),
+      coreVersion: "0.7.9"
+    }
 
     //Delisted Warnings (500-699)
     {
