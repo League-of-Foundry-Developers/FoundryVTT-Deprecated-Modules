@@ -82,7 +82,7 @@ These modules is no longer being maintained and could break with any Foundry upd
 |315 |[FVTT Token Animation Tools (token-animation-tools)](https://github.com/ruipin/fvtt-token-animation-tools)|0.7.5|Use instead [Automated Animations DnD5e (automated-jb2a-animations)](https://github.com/otigon/automated-jb2a-animations )|
 |316 |[Advanced Lighting Toolkit (AdvancedLightingToolkit)](https://github.com/BlitzKraig/fvtt-AdvancedLightingToolkit)|0.7.5|Use instead [Community Lighting for FVTT (CommunityLighting)](https://github.com/BlitzKraig/fvtt-CommunityLighting )|
 |317 |[Combat Ready (combatready)](https://github.com/smilligan93/combatready)|0.7.9|Use instead [Monk's Little Details (monks-little-details)](https://github.com/ironmonk88/monks-little-details)|
-|318 |[Pings (pings)](https://gitlab.com/foundry-azzurite/pings)|0.7.9|Use instead [PnP - Pointer and Pings! (pointer)](https://gitlab.com/tposney/dae )
+|318 |[Pings (pings)](https://gitlab.com/foundry-azzurite/pings)|0.7.9|Use instead [PnP - Pointer and Pings! (pointer)](https://github.com/Moerill/fvtt-pointer )
 
 ## Delisted Warnings
 
@@ -91,44 +91,18 @@ You should consider uninstalling it, and it could break with any Foundry update.
 
 |ID|Module Deprecated | Foundry Version | Note |
 |--- |--- |--- |--- |
-|500 |[Fog Tools (fog-tools)](https://github.com/VanceCole/fog-tools.git)|0.8.0||
+|500 |[Fog Tools (fog-tools)](https://github.com/VanceCole/fog-tools)|0.8.0||
 |501 |[Self Token Delete for Foundry VTT (self-token-delete)](https://github.com/Corvimae/fvtt-self-token-delete)|0.7.5||
-|502 |[VTTA Iconizer (vtta-iconizer)](https://github.com/VTTAssets/vtta-iconizer)
-
-  
-    {
-        id: 502,
-        module: "",
-        category: WarningCategory.Delisted,
-        message: DefaultMessages.delisted(),
-        coreVersion: "0.8.0"
-    },
-    {
-        id: 503,
-        module: "vtta-didyouknow",
-        category: WarningCategory.Delisted,
-        message: DefaultMessages.delisted(),
-        coreVersion: "0.8.0"
-    },
-    {
-        id: 504,
-        module: "streaming-mode",
-        category: WarningCategory.Delisted,
-        message: DefaultMessages.delisted(),
-        coreVersion: "0.8.0"
-    },
-    {
-        id: 505,
-        module: "cursor-hider",
-        category: WarningCategory.Delisted,
-        message: DefaultMessages.delisted(),
-        coreVersion: "0.8.0"
-    }
-
+|502 |[VTTA Iconizer (vtta-iconizer)](https://github.com/VTTAssets/vtta-iconizer)|0.8.0|Use instead [VTTA Iconizer (vtta-iconizer) by Mr Primate](https://github.com/MrPrimate/vtta-iconizer)|
+|503 |[VTTA Did you know (vtta-didyouknow)](https://github.com/VTTAssets/vtta-didyouknow)|0.8.0||
+|504 |[Streaming Mode (streaming-mode)](https://github.com/cswendrowski/FoundryVTT-Streaming-Mode)|0.8.0||
+|505 |[Cursor Hider (cursor-hider)](https://gitlab.com/foundry-azzurite/cursor-hider)|0.8.0||
 
 ## Beta or on Developing 
 
 This is similar to 'Replaced Warnings' but for project on developing or not present for unknown reasons on the module repository, but linked for anyone want to know they existed 
+
+|600 |
 
 ## [Changelog](./changelog.md)
 

@@ -9,13 +9,16 @@ export class WarningModel {
   inactive?: boolean = false;
   highestVersion?:string;
 
-  urlModuleReplaced?: string;
+  moduleUrl?: string;
+  moduleTitle?: string;
+  
   urlFoundryHub?: string;
 
-  moduleSuggested? : string;
-  moduleSuggestedUrl? : string;
-  moduleSuggestedState? : ModuleStateCategory;
-  moduleSuggestedManifestJson?:string;
+  moduleSuggested? : string[];
+  moduleSuggestedTitle? : string[];
+  moduleSuggestedUrl? : string[];
+  moduleSuggestedState? : ModuleStateCategory[];
+  moduleSuggestedManifestJson?:string[];
 
   constructor(
     id: number,
@@ -25,11 +28,13 @@ export class WarningModel {
     coreVersion: string,
     inactive?: boolean,
     highestVersion?:string,
-    urlModuleReplaced?: string,
+    moduleUrl?: string,
+    moduleTitle?: string,
     urlFoundryHub?: string,
-    moduleSuggestedUrl? : string,
-    moduleSuggestedState? : ModuleStateCategory,
-    moduleSuggestedManifestJson?:string
+    moduleSuggestedUrl? : string[],
+    moduleSuggestedTitle?: string[],
+    moduleSuggestedState? : ModuleStateCategory[],
+    moduleSuggestedManifestJson?:string[]
   ){
     this.id = id;
     this.module = module;
@@ -38,9 +43,11 @@ export class WarningModel {
     this.coreVersion = coreVersion;
     this.inactive = inactive;
     this.highestVersion = highestVersion,
-    this.urlModuleReplaced = urlModuleReplaced;
+    this.moduleUrl = moduleUrl,
+    this.moduleTitle = moduleTitle;
     this.urlFoundryHub = urlFoundryHub;
     this.moduleSuggestedUrl = moduleSuggestedUrl;
+    this.moduleSuggestedTitle = moduleSuggestedTitle;
     this.moduleSuggestedState = moduleSuggestedState;
     this.moduleSuggestedManifestJson = moduleSuggestedManifestJson;
   }
