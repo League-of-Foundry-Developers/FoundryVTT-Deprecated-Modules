@@ -105,7 +105,7 @@ You should consider uninstalling it, and it could break with any Foundry update.
 This is similar to 'Replaced Warnings' but for project on developing or not present for unknown reasons on the module repository, but linked for anyone want to know they existed 
 
 
-## [Changelog](./changelog.md)
+## [Changelog](./CHANGELOG.md)
 
 ## Issues
 
