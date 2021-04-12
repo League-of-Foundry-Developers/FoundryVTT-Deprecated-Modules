@@ -89,7 +89,65 @@ These modules is no longer being maintained and could break with any Foundry upd
 These modules has been removed from Foundry's official module repository because it is no longer being maintained.
 You should consider uninstalling it, and it could break with any Foundry update.
 
-## Beta or on Devoloping 
+|ID|Module Deprecated | Foundry Version | Note |
+|--- |--- |--- |--- |
+|500 |[ (fog-tools)]()
 
-This is similar to 'Replaced Warnings'  but for project on developing or not present for unknown reasons on the module repository, but linked for anyone want to know they existed
+{
+        id: 500,
+        module: "fog-tools",
+        category: WarningCategory.Delisted,
+        message: DefaultMessages.delisted(),
+        coreVersion: "0.8.0"
+    },
+    {
+        id: 501,
+        module: "self-token-delete",
+        category: WarningCategory.Delisted,
+        message: DefaultMessages.delisted(),
+        coreVersion: "0.7.5"
+    },
+    {
+        id: 502,
+        module: "vtta-iconizer",
+        category: WarningCategory.Delisted,
+        message: DefaultMessages.delisted(),
+        coreVersion: "0.8.0"
+    },
+    {
+        id: 503,
+        module: "vtta-didyouknow",
+        category: WarningCategory.Delisted,
+        message: DefaultMessages.delisted(),
+        coreVersion: "0.8.0"
+    },
+    {
+        id: 504,
+        module: "streaming-mode",
+        category: WarningCategory.Delisted,
+        message: DefaultMessages.delisted(),
+        coreVersion: "0.8.0"
+    },
+    {
+        id: 505,
+        module: "cursor-hider",
+        category: WarningCategory.Delisted,
+        message: DefaultMessages.delisted(),
+        coreVersion: "0.8.0"
+    }
 
+## Beta or on Developing 
+
+This is similar to 'Replaced Warnings' but for project on developing or not present for unknown reasons on the module repository, but linked for anyone want to know they existed 
+
+## [Changelog](./changelog.md)
+
+## Issues
+
+Any issues, bugs, or feature requests are always welcome to be reported directly to the [Issue Tracker](https://github.com/League-of-Foundry-Developers/FoundryVTT-Deprecated-Modules/issues ), or using the [Bug Reporter Module](https://foundryvtt.com/packages/bug-reporter/).
+
+## Acknowledgements
+
+Bootstrapped with League of Extraordinary FoundryVTT Developers [foundry-vtt-types](https://github.com/League-of-Foundry-Developers/foundry-vtt-types).
+
+Mad props to the 'League of Extraordinary FoundryVTT Developers' community which helped me figure out a lot.
