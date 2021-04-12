@@ -14,24 +14,24 @@ export enum WarningCategory {
 }
 
 export enum ModuleStateCategory {
-  STABLE = "STABLE",
-  DEPRECATED = "DEPRECATED",
-  DEVELOPING = "DEVELOPING",
-  ABBANDONED = "ABBANDONED",
-  MAINTENANCE = "MAINTENANCE"
+  STABLE = "STABLE",          // The module is stable
+  DEPRECATED = "DEPRECATED",  // The module is deprecated
+  DEVELOPING = "DEVELOPING",  // The module is still in developing
+  ABBANDONED = "ABBANDONED",  // The module is abbandoned
+  MAINTENANCE = "MAINTENANCE" // The module is mainteined but no developing
 }
 
 export const printWarningMessage = function(warningModel:WarningModel) {
   let message;
   if(warningModel.category == WarningCategory.Core) {
-    let message = "{} has been integrated into core Foundry, so it should be uninstalled.";
+      message = "{} has been integrated into core Foundry, so it should be uninstalled.";
       if(warningModel.message) {
           message += " " + warningModel.message;
       }
   }
 
   else if(warningModel.category == WarningCategory.Broken) {
-      let message = "{} is partially broken and is no longer being maintained. As it could break further with any Foundry update, it is recommended that you uninstall it.";
+      message = "{} is partially broken and is no longer being maintained. As it could break further with any Foundry update, it is recommended that you uninstall it.";
       let messageBuilder = [];
       for (let i = 0; i < warningModel.moduleSuggested.length; i++) {
         let msg = "";
@@ -50,7 +50,7 @@ export const printWarningMessage = function(warningModel:WarningModel) {
   }
 
   else if(warningModel.category == WarningCategory.Replaced) {
-      let message = "{} is no longer being maintained and could break with any Foundry update, if it hasn't already. It is recommended that you replace it with ";
+      message = "{} is no longer being maintained and could break with any Foundry update, if it hasn't already. It is recommended that you replace it with ";
       let messageBuilder = [];
       for (let i = 0; i < warningModel.moduleSuggested.length; i++) {
         let msg = "";
@@ -69,7 +69,7 @@ export const printWarningMessage = function(warningModel:WarningModel) {
   }
 
   else if(warningModel.category == WarningCategory.Delisted) {
-      let message = "{} has been removed from Foundry's official module repository because it is no longer being maintained."
+      message = "{} has been removed from Foundry's official module repository because it is no longer being maintained."
       message += "You should consider uninstalling it, and it could break with any Foundry update."
       let messageBuilder = [];
       for (let i = 0; i < warningModel.moduleSuggested.length; i++) {
@@ -89,23 +89,27 @@ export const printWarningMessage = function(warningModel:WarningModel) {
   }
 
   else if(warningModel.category == WarningCategory.Abbandoned) {
-    let message = "{} his no longer being maintained."
-    let messageBuilder = [];
-    for (let i = 0; i < warningModel.moduleSuggested.length; i++) {
-      let msg = "";
-      if(warningModel.moduleSuggestedUrl[i]){
-        msg += "<b><u>" + "<a href='"+warningModel.moduleSuggestedUrl[i]+"'>"+warningModel.moduleSuggested[i]+"</a>" + "</u></b>.";
-      } else if(warningModel.moduleSuggested[i]){
-        msg += "<b><u>" + warningModel.moduleSuggested[i] + "</u></b>.";
-      }else{
-        msg += "<b><u>" + "No module founded" + "</u></b>.";
+      message = "{} his no longer being maintained."
+      let messageBuilder = [];
+      for (let i = 0; i < warningModel.moduleSuggested.length; i++) {
+        let msg = "";
+        if(warningModel.moduleSuggestedUrl[i]){
+          msg += "<b><u>" + "<a href='"+warningModel.moduleSuggestedUrl[i]+"'>"+warningModel.moduleSuggested[i]+"</a>" + "</u></b>.";
+        } else if(warningModel.moduleSuggested[i]){
+          msg += "<b><u>" + warningModel.moduleSuggested[i] + "</u></b>.";
+        }else{
+          msg += "<b><u>" + "No module founded" + "</u></b>.";
+        }
+        messageBuilder.push( msg);
       }
-      messageBuilder.push( msg);
-    }
-    if(messageBuilder.length>0){
-      message += messageBuilder.join(" or ");
-    }
+      if(messageBuilder.length>0){
+        message += messageBuilder.join(" or ");
+      }
   }
-  message = message.replace("{}", "<b><u>" + warningModel.module + "</u></b>");
+  if(warningModel.moduleUrl){
+    message = message.replace("{}", "<b><u>" + "<a href='"+warningModel.moduleUrl+"'>"+warningModel.module+"</a>" + "</u></b>");
+  }else{
+    message = message.replace("{}", "<b><u>" + warningModel.module + "</u></b>");
+  }
   return message;
 }
