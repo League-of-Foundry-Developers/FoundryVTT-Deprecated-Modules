@@ -137,6 +137,18 @@ export const warnings:WarningModel[] = [
         moduleSuggestedManifestJson: [],
         moduleSuggestedState: []
     },
+    {
+        id: 8,
+        module: "token-drag-visibility",
+        category: WarningCategory.Core,
+        message: "",
+        coreVersion: "0.7.5",
+        moduleSuggested: [],
+        moduleSuggestedTitle: [],
+        moduleSuggestedUrl: [],
+        moduleSuggestedManifestJson: [],
+        moduleSuggestedState: []
+    },   
 
     //Broken Warnings (200-299)
     {
@@ -413,6 +425,7 @@ export const warnings:WarningModel[] = [
     {
         id: 314,
         module: "canvas-scroll",
+        moduleTitle: "Canvas Scroll",
         category: WarningCategory.Replaced,
         message: "",
         coreVersion: "0.7.5",
@@ -425,8 +438,9 @@ export const warnings:WarningModel[] = [
     {
         id: 315,
         module: "token-action-animations",
+        moduleTitle: "Token Action Animations",
         category: WarningCategory.Replaced,
-        message: "Automated Animations",
+        message: "",
         coreVersion: "0.7.5",
         moduleSuggested: ["automated-jb2a-animations"],
         moduleSuggestedTitle: ["Automated Animations DnD5e"],
@@ -437,6 +451,7 @@ export const warnings:WarningModel[] = [
     {
         id: 316,
         module: "AdvancedLightingToolkit",
+        moduleTitle: "Advanced Lighting Toolkit",
         category: WarningCategory.Replaced,
         message: "",
         coreVersion: "0.7.5",
@@ -449,6 +464,7 @@ export const warnings:WarningModel[] = [
     {
         id: 317,
         module: "combatready",
+        moduleTitle: "Combat Ready",
         category: WarningCategory.Replaced,
         message: "",
         coreVersion: "0.7.9",
@@ -462,6 +478,7 @@ export const warnings:WarningModel[] = [
     {
       id: 318,
       module: "pings",
+      moduleTitle: "Pings",
       category: WarningCategory.Replaced,
       message: "PnP - Pointer and Pings!",
       coreVersion: "0.7.9",
@@ -474,6 +491,7 @@ export const warnings:WarningModel[] = [
     {
         id: 319,
         module: "target-enhancements",
+        moduleTitle: "Target Enhancements",
         category: WarningCategory.Replaced,
         message: "",
         coreVersion: "0.7.9",
@@ -484,7 +502,85 @@ export const warnings:WarningModel[] = [
         moduleSuggestedManifestJson: ["https://raw.githubusercontent.com/p4535992/target-enhancements/master/src/module.json"],
         moduleSuggestedState: [ModuleStateCategory.DEVELOPING]
     },
-
+    {
+        id: 320,
+        module: "ShowDragDistance",
+        moduleTitle: "Show Drag DIstance",
+        category: WarningCategory.Replaced,
+        message: "",
+        coreVersion: "0.7.9",
+        moduleUrl: "https://github.com/wsaunders1014/ShowDragDistance",
+        moduleSuggested: ["drag-ruler"],
+        moduleSuggestedTitle: ["Drag Ruler"],
+        moduleSuggestedUrl: ["https://github.com/manuelVo/foundryvtt-drag-ruler"],
+        moduleSuggestedManifestJson: ["https://raw.githubusercontent.com/manuelVo/foundryvtt-drag-ruler/develop/module.json"],
+        moduleSuggestedState: [ModuleStateCategory.STABLE]
+    },
+    {
+        id: 321,
+        module: "chatdamagebuttons5e",
+        moduleTitle: "Chat Damage Button 5e",
+        category: WarningCategory.Replaced,
+        message: "",
+        coreVersion: "0.4.5",
+        moduleSuggested: ["midi-qol"],
+        moduleSuggestedTitle: ["Midi Quality of Life Improvements"],
+        moduleSuggestedUrl: ["https://gitlab.com/tposney/midi-qol"],
+        moduleSuggestedManifestJson: ["https://gitlab.com/tposney/midi-qol/-/raw/master/src/module.json"],
+        moduleSuggestedState: [ModuleStateCategory.STABLE]
+    },
+    {
+        id: 322,
+        module: "music-assist",
+        moduleTitle: "Musi Assist",
+        category: WarningCategory.Replaced,
+        message: "",
+        coreVersion: "0.5.5",
+        moduleSuggested: ["bellows"],
+        moduleSuggestedTitle: ["Bellows"],
+        moduleSuggestedUrl: ["https://github.com/casualchameleon/Bellows"],
+        moduleSuggestedManifestJson: ["https://raw.githubusercontent.com/casualchameleon/Bellows/master/module.json"],
+        moduleSuggestedState: [ModuleStateCategory.STABLE]
+    },
+    {
+        id: 323,
+        module: "pushTokenBack",
+        moduleTitle: "Push Tokens Back",
+        category: WarningCategory.Replaced,
+        message: "",
+        coreVersion: "0.7.9",
+        moduleSuggested: ["TokensVisible"],
+        moduleSuggestedTitle: ["Your Tokens Visible"],
+        moduleSuggestedUrl: ["https://github.com/David-Zvekic/TokensVisible"],
+        moduleSuggestedManifestJson: ["https://raw.githubusercontent.com/David-Zvekic/TokensVisible/main/module.json"],
+        moduleSuggestedState: [ModuleStateCategory.STABLE]
+    },
+    {
+        id: 324,
+        module: "fvtt-cycle-token-stack",
+        moduleTitle: "Cycle Token Stack",
+        category: WarningCategory.Replaced,
+        message: "",
+        coreVersion: "0.7.9",
+        moduleSuggested: ["TokensVisible"],
+        moduleSuggestedTitle: ["Your Tokens Visible"],
+        moduleSuggestedUrl: ["https://github.com/David-Zvekic/TokensVisible"],
+        moduleSuggestedManifestJson: ["https://raw.githubusercontent.com/David-Zvekic/TokensVisible/main/module.json"],
+        moduleSuggestedState: [ModuleStateCategory.STABLE]
+    },
+    {
+        id: 325,
+        module: "zsync",
+        moduleTitle: "zsync",
+        category: WarningCategory.Replaced,
+        message: "",
+        coreVersion: "0.7.9",
+        moduleSuggested: ["TokensVisible"],
+        moduleSuggestedTitle: ["Your Tokens Visible"],
+        moduleSuggestedUrl: ["https://github.com/David-Zvekic/TokensVisible"],
+        moduleSuggestedManifestJson: ["https://raw.githubusercontent.com/David-Zvekic/TokensVisible/main/module.json"],
+        moduleSuggestedState: [ModuleStateCategory.STABLE]
+    },
     //Delisted Warnings (500-699)
     {
         id: 500,
@@ -538,10 +634,73 @@ export const warnings:WarningModel[] = [
     {
         id: 505,
         module: "cursor-hider",
+        moduleTitle: "Cursor Hider",
         category: WarningCategory.Delisted,
         message: "",
         coreVersion: "0.8.0",
         moduleUrl: "https://gitlab.com/foundry-azzurite/cursor-hider",
         urlFoundryHub: "https://www.foundryvtt-hub.com/package/cursor-hider",
+    },
+    //Abbandoned Warnings (600-799)
+    {
+        id: 600,
+        module: "gm-notes",
+        moduleTitle: "GM Notes",
+        category: WarningCategory.Abbandoned,
+        message: "",
+        coreVersion: "0.7.5",
+        moduleUrl: "https://github.com/syl3r86/gm-notes",
+        urlFoundryHub: "",
+        moduleSuggested: [],
+        moduleSuggestedTitle: [],
+        moduleSuggestedUrl: [],
+        moduleSuggestedManifestJson: [],
+        moduleSuggestedState: []
+    },
+    {
+        id: 601,
+        module: "gm-secrets",
+        moduleTitle: "GM Secret",
+        category: WarningCategory.Abbandoned,
+        message: "",
+        coreVersion: "0.7.9",
+        moduleUrl: "https://github.com/schultzcole/FVTT-GM-Secret-Block",
+        urlFoundryHub: "", 
+        moduleSuggested: [],
+        moduleSuggestedTitle: [],
+        moduleSuggestedUrl: [],
+        moduleSuggestedManifestJson: [],
+        moduleSuggestedState: []
+    },
+    {
+        id: 602,
+        module: "turnAlert",
+        moduleTitle: "FVTT Turn Alert",
+        category: WarningCategory.Abbandoned,
+        message: "",
+        coreVersion: "0.7.9",
+        moduleUrl: "https://github.com/schultzcole/FVTT-Turn-Alert",
+        urlFoundryHub: "", 
+        moduleSuggested: [],
+        moduleSuggestedTitle: [],
+        moduleSuggestedUrl: [],
+        moduleSuggestedManifestJson: [],
+        moduleSuggestedState: []
+    },
+    {
+        id: 603,
+        module: "token-auras",
+        moduleTitle: "Token Aura",
+        category: WarningCategory.Abbandoned,
+        message: "",
+        coreVersion: "0.7.7",
+        moduleUrl: "https://bitbucket.org/Fyorl/token-auras",
+        urlFoundryHub: "", 
+        moduleSuggested: ["foundryvtt-tokeneffects"],
+        moduleSuggestedTitle: ["Token Effects"],
+        moduleSuggestedUrl: ["https://github.com/p4535992/foundryvtt-tokeneffects"],
+        moduleSuggestedManifestJson: ["https://raw.githubusercontent.com/p4535992/foundryvtt-tokeneffects/master/src/module.json"],
+        moduleSuggestedState: [ModuleStateCategory.DEVELOPING]  
     }
+    
 ]

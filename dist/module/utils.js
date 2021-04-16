@@ -17,7 +17,7 @@ export var ModuleStateCategory;
     ModuleStateCategory["DEPRECATED"] = "DEPRECATED";
     ModuleStateCategory["DEVELOPING"] = "DEVELOPING";
     ModuleStateCategory["ABBANDONED"] = "ABBANDONED";
-    ModuleStateCategory["MAINTENANCE"] = "MAINTENANCE";
+    ModuleStateCategory["MAINTENANCE"] = "MAINTENANCE"; // The module is mainteined but no developing
 })(ModuleStateCategory || (ModuleStateCategory = {}));
 export const printWarningMessage = function (warningModel) {
     let message;
@@ -108,6 +108,11 @@ export const printWarningMessage = function (warningModel) {
             message += messageBuilder.join(" or ");
         }
     }
-    message = message.replace("{}", "<b><u>" + warningModel.module + "</u></b>");
+    if (warningModel.moduleUrl) {
+        message = message.replace("{}", "<b><u>" + "<a href='" + warningModel.moduleUrl + "'>" + warningModel.module + "</a>" + "</u></b>");
+    }
+    else {
+        message = message.replace("{}", "<b><u>" + warningModel.module + "</u></b>");
+    }
     return message;
 };

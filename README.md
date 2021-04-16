@@ -43,8 +43,9 @@ These modules has been integrated into core Foundry, so it should be uninstalled
 |5   |No back (noback)|0.7.5||
 |6   |Token Owner Selection (token-owner-selection-tweak)|0.7.1||
 |7   |[Return to setup (returntosetup)](https://github.com/ardittristan/VTTReturnToSetup)|0.7.4||
+|8   |[Token Drag Visibility (token-drag-visibility)](https://github.com/SteffanPoulsen/token-drag-visibility)|0.7.5||
 
-## Broken Warnings or Abbandoned Warnings
+## Broken Warnings
 
 These modules is partially broken and is no longer being maintained. As it could break further with any Foundry update, it is recommended that you uninstall it.";
 
@@ -85,6 +86,12 @@ These modules is no longer being maintained and could break with any Foundry upd
 |317 |[Combat Ready (combatready)](https://github.com/smilligan93/combatready)|0.7.9|Use instead [Monk's Little Details (monks-little-details)](https://github.com/ironmonk88/monks-little-details)|
 |318 |[Pings (pings)](https://gitlab.com/foundry-azzurite/pings)|0.7.9|Use instead [PnP - Pointer and Pings! (pointer)](https://github.com/Moerill/fvtt-pointer )
 |319 |[Target Enhancements (target-enhancements)](https://github.com/eadorin/target-enhancements)|0.7.9|Use instead [Target Enhancements (target-enhancements p4535992 fork)](https://github.com/p4535992/target-enhancements ) on developing|
+|320 |[Show Drag Dinstance (ShowDragDistance)](https://github.com/wsaunders1014/ShowDragDistance)|0.7.5| Use instead [Drag Ruler (drag-ruler)](https://github.com/manuelVo/foundryvtt-drag-ruler)|
+|321 |[Chat Damage Buttons 5e (chatdamagebuttons5e)](https://gitlab.com/hooking/foundry-vtt---chat-damage-buttons)|0.4.5|Use instead [Midi Quality of Life Improvements (midi-qol)](https://gitlab.com/tposney/midi-qol )|
+|322 |[Music Assist (music-assist)](https://github.com/temportalflux/MusicAssist)|0.5.5|Use instead [Bellows (bellows)](https://github.com/casualchameleon/Bellows)|
+|323 |[Push Tokens Back (pushTokenBack)](https://github.com/David-Zvekic/pushTokenBack)|0.7.9|Use instead [Your Tokens Visible (TokensVisible)](https://github.com/David-Zvekic/TokensVisible)|
+|324 |[Cycle Token Stack (fvtt-cycle-token-stack)](https://github.com/aka-beer-buddy/fvtt-cycle-token-stack)|0.7.9|Use instead [Your Tokens Visible (TokensVisible)](https://github.com/David-Zvekic/TokensVisible)|
+|325 |[zsync](https://github.com/Sk1mble/zsync)|0.7.9|Use instead [Your Tokens Visible (TokensVisible)](https://github.com/David-Zvekic/TokensVisible)|
 
 ## Delisted Warnings
 
@@ -99,6 +106,15 @@ You should consider uninstalling it, and it could break with any Foundry update.
 |503 |[VTTA Did you know (vtta-didyouknow)](https://github.com/VTTAssets/vtta-didyouknow)|0.8.0||
 |504 |[Streaming Mode (streaming-mode)](https://github.com/cswendrowski/FoundryVTT-Streaming-Mode)|0.8.0||
 |505 |[Cursor Hider (cursor-hider)](https://gitlab.com/foundry-azzurite/cursor-hider)|0.8.0||
+
+## Abbandoned Warnings (The code is not touched ofr 3 months and no alternative is present)
+
+|ID|Module Abbandoned| Foundry Version | Note |
+|--- |--- |--- |--- |
+|600 |[GM Notes (gm-notes)](https://github.com/syl3r86/gm-notes)|0.7.5||
+|601 |[GM Secrets (gm-secrets)](https://github.com/schultzcole/FVTT-GM-Secret-Block)|0.7.9| Seem to work with 0.7.9|
+|602 |[FVTT Turn Alert (turnAlert)](https://github.com/schultzcole/FVTT-Turn-Alert)|0.7.9|Seem to work with 0.7.9|
+|603 |[Token Aura (token-auras)](https://bitbucket.org/Fyorl/token-auras)|0.7.9| There is partial solution on this module [Token Effects (foundryvtt-tokeneffects)](https://github.com/p4535992/foundryvtt-tokeneffects)|
 
 ## Beta or on Developing 
 

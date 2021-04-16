@@ -18,7 +18,11 @@ export class ModuleChecker {
             if(this.moduleIsIgnored(module.data.name, module.data.version)) {
                 continue;
             }
-
+            // ONLY FOR FOUNDRY 0.8.0
+            // game.modules.forEach(a => console.log([a.data.name, a.data.minimumCoreVersion, a.data.compatibleCoreVersion]))
+            // if(game.version >= module.data.minimumCoreVersion && game.version <= module.data.compatibleCoreVersion){
+            //    continue;
+            // }
             //Check the module
             let warningDetails = this.checkManifest(module.data);
             if(!warningDetails) {
