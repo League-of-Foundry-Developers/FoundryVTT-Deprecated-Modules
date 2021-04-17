@@ -1026,5 +1026,20 @@ export const warnings:WarningModel[] = [
         moduleSuggestedUrl: [],
         moduleSuggestedManifestJson: [],
         moduleSuggestedState: []
+    },
+    {
+        id: 612,
+        module: "point-of-vision",
+        moduleTitle: "Point of Vision",
+        category: WarningCategory.Abbandoned,
+        message: "",
+        coreVersion: "0.6.0",
+        moduleUrl: "https://github.com/eadorin/point-of-vision",
+        urlFoundryHub: "", 
+        moduleSuggested: [],
+        moduleSuggestedTitle: [],
+        moduleSuggestedUrl: [],
+        moduleSuggestedManifestJson: [],
+        moduleSuggestedState: []
     }
 ]

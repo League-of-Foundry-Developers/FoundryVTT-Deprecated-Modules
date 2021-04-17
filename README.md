@@ -142,6 +142,7 @@ The modules are check like "abandoned" if all of the below cases apply:
 |609 |[Foundry PLANT PLAyer Needs Tracker (FoundryPLANT)](https://github.com/GameMaker/FoundryPLANT)|0.7.7||
 |610 |[I See You 5e (icu5e )](https://github.com/herasrobert/icu5e)|0.6.6||
 |611 |[Point of Interest Teleporter (poi-teleport)](https://github.com/zeel01/poi-teleport)|0.7.8||
+|612 |[Point of Vision (point-of-vision)](https://github.com/eadorin/point-of-vision)|0.6.0||
 
 ## [Changelog](./CHANGELOG.md)
 
