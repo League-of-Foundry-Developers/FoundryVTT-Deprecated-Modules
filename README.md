@@ -101,6 +101,8 @@ These modules is no longer being maintained and could break with any Foundry upd
 |328 |[Lets Trade 5e (lets-trade-5e)](https://github.com/KageJittai/lets-trade-5e)|0.7.9|Use instead [FoundryVTT-GiveItem (give-item)](https://github.com/Sepichat/FoundryVTT-GiveItem )|
 |329 |[Search Anywhere (searchanywhere)](https://gitlab.com/riccisi/foundryvtt-search-anywhere )|0.7.9|Use instead [Quick Insert (quick-insert)](https://gitlab.com/fvtt-modules-lab/quick-insert)|
 |330 |[Token Health (token-health)](https://github.com/tonifisler/foundry-token-health)|0.7.3|Use instead [Midi Quality of Life Improvements (midi-qol)](https://gitlab.com/tposney/midi-qol )|
+|331 |[Navigation Presets (navigation-presets)](https://github.com/earlSt1/vtt-navigation-presets )|0.7.9|Use instead [Monks Scene Navigation (monks-scene-navigation)](https://github.com/ironmonk88/monks-scene-navigation )|
+|332 |[Foundry VTT Shared Token Visibility (shared-token-visibility)](https://github.com/sfuqua/fvtt-token-visibility )|0.7.9|[Shared Vision (SharedVision)](https://github.com/CDeenen/SharedVision )|
 
 ## Delisted Warnings
 
@@ -138,6 +140,8 @@ The modules are check like "abandoned" if all of the below cases apply:
 |607 |[FVTT-SelectiveShow (selectiveshow)](https://github.com/moo-man/FVTT-SelectiveShow)|0.7.9|Seem to work with 0.7.9|
 |608 |[FVTT Token Animation Tools (token-animation-tools)](https://github.com/ruipin/fvtt-token-animation-tools)|0.7.9|
 |609 |[Foundry PLANT PLAyer Needs Tracker (FoundryPLANT)](https://github.com/GameMaker/FoundryPLANT)|0.7.7||
+|610 |[I See You 5e (icu5e )](https://github.com/herasrobert/icu5e)|0.6.6||
+|611 |[Point of Interest Teleporter (poi-teleport)](https://github.com/zeel01/poi-teleport)|0.7.8||
 
 ## [Changelog](./CHANGELOG.md)
 
