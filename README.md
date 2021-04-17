@@ -29,6 +29,10 @@ For more information about Manifest+, [go here](https://foundryvtt.wiki/en/devel
 # License
 Deprecated Modules is licensed under the MIT License (see LICENSE file), as well as Foundry VTT's [Limited License Agreement for Module Development 05/29/2020](https://foundryvtt.com/article/license/).
 
+# Module Warnings List
+
+**The following list is the result of a few contributors any error and / or misunderstanding can be indicated by opening an issue in the project.**
+
 ## Core Warnings
 
 These modules has been integrated into core Foundry, so it should be uninstalled.
@@ -93,6 +97,7 @@ These modules is no longer being maintained and could break with any Foundry upd
 |324 |[Cycle Token Stack (fvtt-cycle-token-stack)](https://github.com/aka-beer-buddy/fvtt-cycle-token-stack)|0.7.9|Use instead [Your Tokens Visible (TokensVisible)](https://github.com/David-Zvekic/TokensVisible)|
 |325 |[zsync (zsync)](https://github.com/Sk1mble/zsync)|0.7.9|Use instead [Your Tokens Visible (TokensVisible)](https://github.com/David-Zvekic/TokensVisible)|
 |326 |[Everybody Look (everybody-look)](https://github.com/winks-vtt/everybody-look)|0.6.5|Use instead [Pull Players to Scene(pull-players-to-scene)](https://github.com/Mr-Byte/pull-players-to-scene)|
+|327 |[Adjusted Movement (adjusted-movement)](https://github.com/eadorin/adjusted-movement)|0.7.7|Use instead [Not Your Turn! (NotYourTurn)](https://github.com/CDeenen/NotYourTurn)
 
 ## Delisted Warnings
 
@@ -122,8 +127,8 @@ The modules are check like "abandoned" if all of the below cases apply:
 
 |ID|Module Abbandoned| Foundry Version | Note |
 |--- |--- |--- |--- |
-|600 |[GM Notes (gm-notes)](https://github.com/syl3r86/gm-notes)|0.7.5||
-|601 |[GM Secrets (gm-secrets)](https://github.com/schultzcole/FVTT-GM-Secret-Block)|0.7.9| Seem to work with 0.7.9|
+|600 |[GM Notes (gm-notes)](https://github.com/syl3r86/gm-notes)|0.7.5|Seem to work with 0.7.9|
+|601 |[GM Secrets (gm-secrets)](https://github.com/schultzcole/FVTT-GM-Secret-Block)|0.7.9|Seem to work with 0.7.9|
 |602 |[FVTT Turn Alert (turnAlert)](https://github.com/schultzcole/FVTT-Turn-Alert)|0.7.9|Seem to work with 0.7.9|
 |603 |[Token Aura (token-auras)](https://bitbucket.org/Fyorl/token-auras)|0.7.9| There is partial solution on this module [Token Effects (foundryvtt-tokeneffects)](https://github.com/p4535992/foundryvtt-tokeneffects)|
 |604 |[Workshop's Party Unit Frames (workshop-party-unit-frames)](https://github.com/Foundry-Workshop/party-unit-frames)|0.7.0||

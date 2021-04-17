@@ -656,6 +656,20 @@ export const warnings:WarningModel[] = [
         moduleSuggestedManifestJson: ["https://raw.githubusercontent.com/Mr-Byte/pull-players-to-scene/main/module.json"],
         moduleSuggestedState: [ModuleStateCategory.STABLE]
     },
+    {
+        id: 327,
+        module: "adjusted-movement",
+        moduleTitle: "Adjusted Movement",
+        category: WarningCategory.Replaced,
+        message: "",
+        coreVersion: "0.7.7",
+        moduleUrl: "https://github.com/eadorin/adjusted-movement",
+        moduleSuggested: ["NotYourTurn"],
+        moduleSuggestedTitle: ["Not Your Turn!"],
+        moduleSuggestedUrl: ["https://github.com/CDeenen/NotYourTurn"],
+        moduleSuggestedManifestJson: ["https://raw.githubusercontent.com/CDeenen/NotYourTurn/master/module.json"],
+        moduleSuggestedState: [ModuleStateCategory.STABLE]
+    },
     //Delisted Warnings (500-699)
     {
         id: 500,
