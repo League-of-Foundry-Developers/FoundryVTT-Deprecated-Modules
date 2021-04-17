@@ -91,7 +91,8 @@ These modules is no longer being maintained and could break with any Foundry upd
 |322 |[Music Assist (music-assist)](https://github.com/temportalflux/MusicAssist)|0.5.5|Use instead [Bellows (bellows)](https://github.com/casualchameleon/Bellows)|
 |323 |[Push Tokens Back (pushTokenBack)](https://github.com/David-Zvekic/pushTokenBack)|0.7.9|Use instead [Your Tokens Visible (TokensVisible)](https://github.com/David-Zvekic/TokensVisible)|
 |324 |[Cycle Token Stack (fvtt-cycle-token-stack)](https://github.com/aka-beer-buddy/fvtt-cycle-token-stack)|0.7.9|Use instead [Your Tokens Visible (TokensVisible)](https://github.com/David-Zvekic/TokensVisible)|
-|325 |[zsync](https://github.com/Sk1mble/zsync)|0.7.9|Use instead [Your Tokens Visible (TokensVisible)](https://github.com/David-Zvekic/TokensVisible)|
+|325 |[zsync (zsync)](https://github.com/Sk1mble/zsync)|0.7.9|Use instead [Your Tokens Visible (TokensVisible)](https://github.com/David-Zvekic/TokensVisible)|
+|326 |[Everybody Look (everybody-look)](https://github.com/winks-vtt/everybody-look)|0.6.5|Use instead [Pull Players to Scene(pull-players-to-scene)](https://github.com/Mr-Byte/pull-players-to-scene)|
 
 ## Delisted Warnings
 
@@ -106,8 +107,18 @@ You should consider uninstalling it, and it could break with any Foundry update.
 |503 |[VTTA Did you know (vtta-didyouknow)](https://github.com/VTTAssets/vtta-didyouknow)|0.8.0||
 |504 |[Streaming Mode (streaming-mode)](https://github.com/cswendrowski/FoundryVTT-Streaming-Mode)|0.8.0||
 |505 |[Cursor Hider (cursor-hider)](https://gitlab.com/foundry-azzurite/cursor-hider)|0.8.0||
+|506 |[FoundryVTT Lingering Injuries (foundryvtt-lingering-injuries)](https://gitlab.com/p4535992/foundryvtt-lingering-injuries)|0.7.1| It's still working|
 
-## Abbandoned Warnings (The code is not touched ofr 3 months and no alternative is present)
+## Abbandoned Warnings 
+
+Abandoned modules are a (potential) problem for Foundry, because users and/or other modules might rely on abandoned modules, which might break in future Foundry updates.
+
+The modules are check like "abandoned" if all of the below cases apply:
+
+- These modules/github pages has not received any updates in at least 3 months
+- The developershave not posted anything on "the Foundry" and "the League of Extraordinary Foundry VTT Developers" discord servers in at least 2 months
+- The developers have not responded to emails or PMs on Discord in at least 1 month
+- The developer have not announced a temporary break from development, unless the announced end date of this break has been passed by at least 2 months
 
 |ID|Module Abbandoned| Foundry Version | Note |
 |--- |--- |--- |--- |
@@ -115,6 +126,8 @@ You should consider uninstalling it, and it could break with any Foundry update.
 |601 |[GM Secrets (gm-secrets)](https://github.com/schultzcole/FVTT-GM-Secret-Block)|0.7.9| Seem to work with 0.7.9|
 |602 |[FVTT Turn Alert (turnAlert)](https://github.com/schultzcole/FVTT-Turn-Alert)|0.7.9|Seem to work with 0.7.9|
 |603 |[Token Aura (token-auras)](https://bitbucket.org/Fyorl/token-auras)|0.7.9| There is partial solution on this module [Token Effects (foundryvtt-tokeneffects)](https://github.com/p4535992/foundryvtt-tokeneffects)|
+|604 |[Workshop's Party Unit Frames (workshop-party-unit-frames)](https://github.com/Foundry-Workshop/party-unit-frames)|0.7.0||
+|605 |[Ambient Doors (ambientdoors)](https://github.com/EndlesNights/ambientdoors)|0.7.9|Seem to work with 0.7.9|
 
 ## Beta or on Developing 
 
