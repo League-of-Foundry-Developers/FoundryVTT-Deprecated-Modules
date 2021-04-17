@@ -98,6 +98,9 @@ These modules is no longer being maintained and could break with any Foundry upd
 |325 |[zsync (zsync)](https://github.com/Sk1mble/zsync)|0.7.9|Use instead [Your Tokens Visible (TokensVisible)](https://github.com/David-Zvekic/TokensVisible)|
 |326 |[Everybody Look (everybody-look)](https://github.com/winks-vtt/everybody-look)|0.6.5|Use instead [Pull Players to Scene(pull-players-to-scene)](https://github.com/Mr-Byte/pull-players-to-scene)|
 |327 |[Adjusted Movement (adjusted-movement)](https://github.com/eadorin/adjusted-movement)|0.7.7|Use instead [Not Your Turn! (NotYourTurn)](https://github.com/CDeenen/NotYourTurn)
+|328 |[Lets Trade 5e (lets-trade-5e)](https://github.com/KageJittai/lets-trade-5e)|0.7.9|Use instead [FoundryVTT-GiveItem (give-item)](https://github.com/Sepichat/FoundryVTT-GiveItem )|
+|329 |[Search Anywhere (searchanywhere)](https://gitlab.com/riccisi/foundryvtt-search-anywhere )|0.7.9|Use instead [Quick Insert (quick-insert)](https://gitlab.com/fvtt-modules-lab/quick-insert)|
+|330 |[Token Health (token-health)](https://github.com/tonifisler/foundry-token-health)|0.7.3|Use instead [Midi Quality of Life Improvements (midi-qol)](https://gitlab.com/tposney/midi-qol )|
 
 ## Delisted Warnings
 
@@ -121,9 +124,7 @@ Abandoned modules are a (potential) problem for Foundry, because users and/or ot
 The modules are check like "abandoned" if all of the below cases apply:
 
 - These modules/github pages has not received any updates in at least 3 months
-- The developershave not posted anything on "the Foundry" and "the League of Extraordinary Foundry VTT Developers" discord servers in at least 2 months
-- The developers have not responded to emails or PMs on Discord in at least 1 month
-- The developer have not announced a temporary break from development, unless the announced end date of this break has been passed by at least 2 months
+- There is a no valid alternative module
 
 |ID|Module Abbandoned| Foundry Version | Note |
 |--- |--- |--- |--- |
@@ -133,11 +134,10 @@ The modules are check like "abandoned" if all of the below cases apply:
 |603 |[Token Aura (token-auras)](https://bitbucket.org/Fyorl/token-auras)|0.7.9| There is partial solution on this module [Token Effects (foundryvtt-tokeneffects)](https://github.com/p4535992/foundryvtt-tokeneffects)|
 |604 |[Workshop's Party Unit Frames (workshop-party-unit-frames)](https://github.com/Foundry-Workshop/party-unit-frames)|0.7.0||
 |605 |[Ambient Doors (ambientdoors)](https://github.com/EndlesNights/ambientdoors)|0.7.9|Seem to work with 0.7.9|
-
-## Beta or on Developing 
-
-This is similar to 'Replaced Warnings' but for project on developing or not present for unknown reasons on the module repository, but linked for anyone want to know they existed 
-
+|606 |[FVTT-Backgroundless-Pins (backgroundless-pins)](https://github.com/schultzcole/FVTT-Backgroundless-Pins)|0.7.9|Seem to work with 0.7.9|
+|607 |[FVTT-SelectiveShow (selectiveshow)](https://github.com/moo-man/FVTT-SelectiveShow)|0.7.9|Seem to work with 0.7.9|
+|608 |[FVTT Token Animation Tools (token-animation-tools)](https://github.com/ruipin/fvtt-token-animation-tools)|0.7.9|
+|609 |[Foundry PLANT PLAyer Needs Tracker (FoundryPLANT)](https://github.com/GameMaker/FoundryPLANT)|0.7.7||
 
 ## [Changelog](./CHANGELOG.md)
 
