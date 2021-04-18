@@ -584,10 +584,10 @@ export const warnings:WarningModel[] = [
         category: WarningCategory.Replaced,
         message: "",
         coreVersion: "0.4.5",
-        moduleSuggested: ["midi-qol"],
-        moduleSuggestedTitle: ["Midi Quality of Life Improvements"],
-        moduleSuggestedUrl: ["https://gitlab.com/tposney/midi-qol"],
-        moduleSuggestedManifestJson: ["https://gitlab.com/tposney/midi-qol/-/raw/master/src/module.json"],
+        moduleSuggested: ["midi-qol", "simple-chat-damage-buttons-5e"],
+        moduleSuggestedTitle: ["Midi Quality of Life Improvements", "Simple Chat Damage Buttons 5e"],
+        moduleSuggestedUrl: ["https://gitlab.com/tposney/midi-qol", "https://github.com/Yidna/fvtt-simple-chat-damage-buttons"],
+        moduleSuggestedManifestJson: ["https://gitlab.com/tposney/midi-qol/-/raw/master/src/module.json", "https://raw.githubusercontent.com/Yidna/fvtt-simple-chat-damage-buttons/master/module.json"],
         moduleSuggestedState: [ModuleStateCategory.STABLE]
     },
     {
