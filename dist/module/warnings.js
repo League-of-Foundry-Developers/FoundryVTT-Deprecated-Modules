@@ -883,21 +883,21 @@ export const warnings = [
         moduleSuggestedManifestJson: [],
         moduleSuggestedState: []
     },
-    {
-        id: 603,
-        module: "token-auras",
-        moduleTitle: "Token Aura",
-        category: WarningCategory.Abbandoned,
-        message: "",
-        coreVersion: "0.7.7",
-        moduleUrl: "https://bitbucket.org/Fyorl/token-auras",
-        urlFoundryHub: "",
-        moduleSuggested: ["foundryvtt-tokeneffects"],
-        moduleSuggestedTitle: ["Token Effects"],
-        moduleSuggestedUrl: ["https://github.com/p4535992/foundryvtt-tokeneffects"],
-        moduleSuggestedManifestJson: ["https://raw.githubusercontent.com/p4535992/foundryvtt-tokeneffects/master/src/module.json"],
-        moduleSuggestedState: [ModuleStateCategory.DEVELOPING]
-    },
+    // {
+    //     id: 603,
+    //     module: "token-auras",
+    //     moduleTitle: "Token Aura",
+    //     category: WarningCategory.Abbandoned,
+    //     message: "",
+    //     coreVersion: "0.7.7",
+    //     moduleUrl: "https://bitbucket.org/Fyorl/token-auras",
+    //     urlFoundryHub: "",
+    //     moduleSuggested: ["foundryvtt-tokeneffects"],
+    //     moduleSuggestedTitle: ["Token Effects"],
+    //     moduleSuggestedUrl: ["https://github.com/p4535992/foundryvtt-tokeneffects"],
+    //     moduleSuggestedManifestJson: ["https://raw.githubusercontent.com/p4535992/foundryvtt-tokeneffects/master/src/module.json"],
+    //     moduleSuggestedState: [ModuleStateCategory.DEVELOPING]
+    // },
     {
         id: 604,
         module: "workshop-party-unit-frames",

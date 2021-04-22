@@ -133,7 +133,6 @@ The modules are check like "abandoned" if all of the below cases apply:
 |600 |[GM Notes (gm-notes)](https://github.com/syl3r86/gm-notes)|0.7.5|Seem to work with 0.7.9|
 |601 |[GM Secrets (gm-secrets)](https://github.com/schultzcole/FVTT-GM-Secret-Block)|0.7.9|Seem to work with 0.7.9|
 |602 |[FVTT Turn Alert (turnAlert)](https://github.com/schultzcole/FVTT-Turn-Alert)|0.7.9|Seem to work with 0.7.9|
-|603 |[Token Aura (token-auras)](https://bitbucket.org/Fyorl/token-auras)|0.7.9| There is partial solution on this module [Token Effects (foundryvtt-tokeneffects)](https://github.com/p4535992/foundryvtt-tokeneffects)|
 |604 |[Workshop's Party Unit Frames (workshop-party-unit-frames)](https://github.com/Foundry-Workshop/party-unit-frames)|0.7.0||
 |605 |[Ambient Doors (ambientdoors)](https://github.com/EndlesNights/ambientdoors)|0.7.9|Seem to work with 0.7.9|
 |606 |[FVTT-Backgroundless-Pins (backgroundless-pins)](https://github.com/schultzcole/FVTT-Backgroundless-Pins)|0.7.9|Seem to work with 0.7.9|
