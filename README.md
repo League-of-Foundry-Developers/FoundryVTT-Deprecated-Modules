@@ -89,7 +89,7 @@ These modules is no longer being maintained and could break with any Foundry upd
 |316 |[Advanced Lighting Toolkit (AdvancedLightingToolkit)](https://github.com/BlitzKraig/fvtt-AdvancedLightingToolkit)|0.7.5|Use instead [Community Lighting for FVTT (CommunityLighting)](https://github.com/BlitzKraig/fvtt-CommunityLighting )|
 |317 |[Combat Ready (combatready)](https://github.com/smilligan93/combatready)|0.7.9|Use instead [Monk's Little Details (monks-little-details)](https://github.com/ironmonk88/monks-little-details)|
 |318 |[Pings (pings)](https://gitlab.com/foundry-azzurite/pings)|0.7.9|Use instead [PnP - Pointer and Pings! (pointer)](https://github.com/Moerill/fvtt-pointer )
-|319 |[Target Enhancements (target-enhancements)](https://github.com/eadorin/target-enhancements)|0.7.9|Use instead [Target Enhancements (target-enhancements p4535992 fork)](https://github.com/p4535992/target-enhancements ) on developing|
+|319 |[Target Enhancements (target-enhancements)](https://github.com/eadorin/target-enhancements)|0.7.9|Use instead [Target Enhancements (target-enhancements p4535992 fork)](https://github.com/p4535992/target-enhancements ) but is still on developing|
 |320 |[Show Drag Dinstance (ShowDragDistance)](https://github.com/wsaunders1014/ShowDragDistance)|0.7.5| Use instead [Drag Ruler (drag-ruler)](https://github.com/manuelVo/foundryvtt-drag-ruler)|
 |321 |[Chat Damage Buttons 5e (chatdamagebuttons5e)](https://gitlab.com/hooking/foundry-vtt---chat-damage-buttons)|0.4.5|Use instead [Midi Quality of Life Improvements (midi-qol)](https://gitlab.com/tposney/midi-qol ) or [Simple Chat Damage Buttons 5e (simple-chat-damage-buttons-5e)](https://github.com/Yidna/fvtt-simple-chat-damage-buttons)|
 |322 |[Music Assist (music-assist)](https://github.com/temportalflux/MusicAssist)|0.5.5|Use instead [Bellows (bellows)](https://github.com/casualchameleon/Bellows)|
@@ -103,6 +103,7 @@ These modules is no longer being maintained and could break with any Foundry upd
 |330 |[Token Health (token-health)](https://github.com/tonifisler/foundry-token-health)|0.7.3|Use instead [Midi Quality of Life Improvements (midi-qol)](https://gitlab.com/tposney/midi-qol )|
 |331 |[Navigation Presets (navigation-presets)](https://github.com/earlSt1/vtt-navigation-presets )|0.7.9|Use instead [Monks Scene Navigation (monks-scene-navigation)](https://github.com/ironmonk88/monks-scene-navigation )|
 |332 |[Foundry VTT Shared Token Visibility (shared-token-visibility)](https://github.com/sfuqua/fvtt-token-visibility )|0.7.9|[Shared Vision (SharedVision)](https://github.com/CDeenen/SharedVision )|
+|333 |[Hot Seat Observer (foundry-hot-seat-observer)](https://github.com/Zzarek/FoundryHotSeatObserver )|0.5.5|[Shared Vision (SharedVision)](https://github.com/CDeenen/SharedVision )|
 
 ## Delisted Warnings
 
