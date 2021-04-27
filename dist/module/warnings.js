@@ -1046,5 +1046,20 @@ export const warnings = [
         moduleSuggestedUrl: [],
         moduleSuggestedManifestJson: [],
         moduleSuggestedState: []
+    },
+    {
+        id: 613,
+        module: "conditional-visibility",
+        moduleTitle: "Conditional Visibility",
+        category: WarningCategory.Abbandoned,
+        message: "",
+        coreVersion: "0.7.6",
+        moduleUrl: "https://github.com/gludington/conditional-visibility",
+        urlFoundryHub: "",
+        moduleSuggested: [],
+        moduleSuggestedTitle: [],
+        moduleSuggestedUrl: [],
+        moduleSuggestedManifestJson: [],
+        moduleSuggestedState: []
     }
 ];
