@@ -739,11 +739,11 @@ export const warnings = [
         message: "",
         coreVersion: "0.5.5",
         moduleUrl: "https://github.com/Zzarek/FoundryHotSeatObserver",
-        moduleSuggested: ["SharedVision"],
-        moduleSuggestedTitle: ["Shared Vision"],
-        moduleSuggestedUrl: ["https://github.com/CDeenen/SharedVision"],
-        moduleSuggestedManifestJson: ["https://raw.githubusercontent.com/CDeenen/SharedVision/master/module.json"],
-        moduleSuggestedState: [ModuleStateCategory.STABLE]
+        moduleSuggested: ["SharedVision", "gaming-table-player"],
+        moduleSuggestedTitle: ["Shared Vision", "Gaming Table Player"],
+        moduleSuggestedUrl: ["https://github.com/CDeenen/SharedVision", "https://github.com/skepickle/foundryvtt-gaming-table-player"],
+        moduleSuggestedManifestJson: ["https://raw.githubusercontent.com/CDeenen/SharedVision/master/module.json", "https://raw.githubusercontent.com/skepickle/foundryvtt-gaming-table-player/master/module.json"],
+        moduleSuggestedState: [ModuleStateCategory.STABLE, ModuleStateCategory.STABLE]
     },
     //Delisted Warnings (500-699)
     {
