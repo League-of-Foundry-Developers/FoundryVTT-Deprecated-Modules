@@ -754,6 +754,20 @@ export const warnings:WarningModel[] = [
       moduleSuggestedManifestJson: ["https://raw.githubusercontent.com/CDeenen/SharedVision/master/module.json","https://raw.githubusercontent.com/skepickle/foundryvtt-gaming-table-player/master/module.json"],
       moduleSuggestedState: [ModuleStateCategory.STABLE, ModuleStateCategory.STABLE]
     },
+    {
+      id: 334,
+      module: "token-hud-art-button",
+      moduleTitle: "Token HUD Artwork Button / Show Art",
+      category: WarningCategory.Replaced,
+      message: "",
+      coreVersion: "0.7.8",
+      moduleUrl: "https://github.com/zeel01/TokenHUDArtButton",
+      moduleSuggested: ["ShowArt"],
+      moduleSuggestedTitle: ["Show Art With Credits"],
+      moduleSuggestedUrl: ["https://github.com/HadaIonut/Foundry-Show-Art"],
+      moduleSuggestedManifestJson: ["https://raw.githubusercontent.com/HadaIonut/Foundry-Show-Art/master/module.json"],
+      moduleSuggestedState: [ModuleStateCategory.STABLE]
+    },
     //Delisted Warnings (500-699)
     {
         id: 500,
