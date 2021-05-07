@@ -104,7 +104,8 @@ These modules is no longer being maintained and could break with any Foundry upd
 |331 |[Navigation Presets (navigation-presets)](https://github.com/earlSt1/vtt-navigation-presets )|0.7.9|Use instead [Monks Scene Navigation (monks-scene-navigation)](https://github.com/ironmonk88/monks-scene-navigation )|
 |332 |[Foundry VTT Shared Token Visibility (shared-token-visibility)](https://github.com/sfuqua/fvtt-token-visibility )|0.7.9|[Shared Vision (SharedVision)](https://github.com/CDeenen/SharedVision )|
 |333 |[Hot Seat Observer (foundry-hot-seat-observer)](https://github.com/Zzarek/FoundryHotSeatObserver )|0.5.5|[Shared Vision (SharedVision)](https://github.com/CDeenen/SharedVision ) or [Gaming Table Player (gaming-table-player)](https://github.com/skepickle/foundryvtt-gaming-table-player)|
-|334 |[Token HUD Artwork Button / Show Art (token-hud-art-button)](https://github.com/zeel01/TokenHUDArtButton)|0.7.8|[Show Art With Credits (ShowArt)](https://github.com/HadaIonut/Foundry-Show-Art)
+|334 |[Token HUD Artwork Button / Show Art (token-hud-art-button)](https://github.com/zeel01/TokenHUDArtButton)|0.7.8|[Show Art With Credits (ShowArt)](https://github.com/HadaIonut/Foundry-Show-Art)|
+|335 |[Calendar/Weather (calendar-weather)](https://github.com/DasSauerkraut/calendar-weather)|0.7.9|[SmallTime (smalltime)](https://github.com/unsoluble/smalltime) or [Simple Calendar (foundryvtt-simple-calendar)](https://github.com/vigoren/foundryvtt-simple-calendar)|
 
 ## Delisted Warnings
 

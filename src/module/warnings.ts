@@ -768,6 +768,20 @@ export const warnings:WarningModel[] = [
       moduleSuggestedManifestJson: ["https://raw.githubusercontent.com/HadaIonut/Foundry-Show-Art/master/module.json"],
       moduleSuggestedState: [ModuleStateCategory.STABLE]
     },
+    {
+        id: 335,
+        module: "calendar-weather",
+        moduleTitle: "Calendar/Weather",
+        category: WarningCategory.Replaced,
+        message: "",
+        coreVersion: "0.7.9",
+        moduleUrl: "https://github.com/DasSauerkraut/calendar-weather",
+        moduleSuggested: ["smalltime","foundryvtt-simple-calendar"],
+        moduleSuggestedTitle: ["SmallTime","Simple Calendar"],
+        moduleSuggestedUrl: ["https://github.com/unsoluble/smalltime","https://github.com/vigoren/foundryvtt-simple-calendar"],
+        moduleSuggestedManifestJson: ["https://raw.githubusercontent.com/unsoluble/smalltime/main/module.json","https://raw.githubusercontent.com/vigoren/foundryvtt-simple-calendar/main/src/module.json"],
+        moduleSuggestedState: [ModuleStateCategory.STABLE,ModuleStateCategory.STABLE]
+    },
     //Delisted Warnings (500-699)
     {
         id: 500,
