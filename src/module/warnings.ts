@@ -782,6 +782,20 @@ export const warnings:WarningModel[] = [
         moduleSuggestedManifestJson: ["https://raw.githubusercontent.com/unsoluble/smalltime/main/module.json","https://raw.githubusercontent.com/vigoren/foundryvtt-simple-calendar/main/src/module.json"],
         moduleSuggestedState: [ModuleStateCategory.STABLE,ModuleStateCategory.STABLE]
     },
+    {
+        id: 336,
+        module: "gm-notes",
+        moduleTitle: "GM Notes",
+        category: WarningCategory.Replaced,
+        message: "",
+        coreVersion: "0.7.5",
+        moduleUrl: "https://github.com/syl3r86/gm-notes",
+        moduleSuggested: ["gm-notes"],
+        moduleSuggestedTitle: ["GM Notes fork Xeon2003"],
+        moduleSuggestedUrl: ["https://github.com/Xeon2003/gm-notes"],
+        moduleSuggestedManifestJson: ["https://raw.githubusercontent.com/Xeon2003/gm-notes/master/module.json"],
+        moduleSuggestedState: [ModuleStateCategory.STABLE]
+    },
     //Delisted Warnings (500-699)
     {
         id: 500,

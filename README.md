@@ -106,6 +106,7 @@ These modules is no longer being maintained and could break with any Foundry upd
 |333 |[Hot Seat Observer (foundry-hot-seat-observer)](https://github.com/Zzarek/FoundryHotSeatObserver )|0.5.5|[Shared Vision (SharedVision)](https://github.com/CDeenen/SharedVision ) or [Gaming Table Player (gaming-table-player)](https://github.com/skepickle/foundryvtt-gaming-table-player)|
 |334 |[Token HUD Artwork Button / Show Art (token-hud-art-button)](https://github.com/zeel01/TokenHUDArtButton)|0.7.8|[Show Art With Credits (ShowArt)](https://github.com/HadaIonut/Foundry-Show-Art)|
 |335 |[Calendar/Weather (calendar-weather)](https://github.com/DasSauerkraut/calendar-weather)|0.7.9|[SmallTime (smalltime)](https://github.com/unsoluble/smalltime) or [Simple Calendar (foundryvtt-simple-calendar)](https://github.com/vigoren/foundryvtt-simple-calendar)|
+|336 |[GM Notes (gm-notes)](https://github.com/syl3r86/gm-notes)|0.7.5|[GM Notes fork Xeon2003 (gm-notes)](https://github.com/Xeon2003/gm-notes)|
 
 ## Delisted Warnings
 
