@@ -712,20 +712,20 @@ export const warnings:WarningModel[] = [
         moduleSuggestedManifestJson: ["https://gitlab.com/tposney/midi-qol/-/raw/master/src/module.json"],
         moduleSuggestedState: [ModuleStateCategory.STABLE]
     },
-    {
-        id: 331,
-        module: "navigation-presets",
-        moduleTitle: "Navigation Presets",
-        category: WarningCategory.Replaced,
-        message: "",
-        coreVersion: "0.7.9",
-        moduleUrl: "https://github.com/earlSt1/vtt-navigation-presets",
-        moduleSuggested: ["monks-scene-navigation"],
-        moduleSuggestedTitle: ["Monks Scene Navigation"],
-        moduleSuggestedUrl: ["https://github.com/ironmonk88/monks-scene-navigation"],
-        moduleSuggestedManifestJson: ["https://raw.githubusercontent.com/ironmonk88/monks-scene-navigation/main/module.json"],
-        moduleSuggestedState: [ModuleStateCategory.STABLE]
-    },
+    // {
+    //     id: 331,
+    //     module: "navigation-presets",
+    //     moduleTitle: "Navigation Presets",
+    //     category: WarningCategory.Replaced,
+    //     message: "",
+    //     coreVersion: "0.7.9",
+    //     moduleUrl: "https://github.com/earlSt1/vtt-navigation-presets",
+    //     moduleSuggested: ["monks-scene-navigation"],
+    //     moduleSuggestedTitle: ["Monks Scene Navigation"],
+    //     moduleSuggestedUrl: ["https://github.com/ironmonk88/monks-scene-navigation"],
+    //     moduleSuggestedManifestJson: ["https://raw.githubusercontent.com/ironmonk88/monks-scene-navigation/main/module.json"],
+    //     moduleSuggestedState: [ModuleStateCategory.STABLE]
+    // },
     {
         id: 332,
         module: "shared-token-visibility",
