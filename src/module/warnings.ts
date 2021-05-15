@@ -796,6 +796,62 @@ export const warnings:WarningModel[] = [
         moduleSuggestedManifestJson: ["https://raw.githubusercontent.com/Xeon2003/gm-notes/master/module.json"],
         moduleSuggestedState: [ModuleStateCategory.STABLE]
     },
+    {
+        id: 337,
+        module: "foundryvtt-lingering-injuries",
+        moduleTitle: "FoundryVTT Lingering Injuries",
+        category: WarningCategory.Replaced,
+        message: "",
+        coreVersion: "0.7.1",
+        moduleUrl: "https://gitlab.com/p4535992/foundryvtt-lingering-injuries",
+        moduleSuggested: ["foundryvtt-compendiums-mix-dnd5e"],
+        moduleSuggestedTitle: ["FoundryVTT Compendiums Mix"],
+        moduleSuggestedUrl: ["https://github.com/p4535992/foundryvtt-compendiums-mix-dnd5e"],
+        moduleSuggestedManifestJson: ["https://raw.githubusercontent.com/p4535992/foundryvtt-compendiums-mix-dnd5e/master/src/module.json"],
+        moduleSuggestedState: [ModuleStateCategory.STABLE]
+    },
+    {
+        id: 338,
+        module: "koboldpressogl",
+        moduleTitle: "Kobold Press OGL Compendium",
+        category: WarningCategory.Replaced,
+        message: "",
+        coreVersion: "0.7.1",
+        moduleUrl: "http://kpogl.wdfiles.com/local--files/home:home/module.json",
+        moduleSuggested: ["foundryvtt-compendiums-mix-dnd5e"],
+        moduleSuggestedTitle: ["FoundryVTT Compendiums Mix"],
+        moduleSuggestedUrl: ["https://github.com/p4535992/foundryvtt-compendiums-mix-dnd5e"],
+        moduleSuggestedManifestJson: ["https://raw.githubusercontent.com/p4535992/foundryvtt-compendiums-mix-dnd5e/master/src/module.json"],
+        moduleSuggestedState: [ModuleStateCategory.STABLE]
+    },
+    {
+        id: 339,
+        module: "summoner",
+        moduleTitle: "Summoner Compendium",
+        category: WarningCategory.Replaced,
+        message: "",
+        coreVersion: "0.7.1",
+        moduleUrl: "https://github.com/Jonwh25/summoner/",
+        moduleSuggested: ["foundryvtt-compendiums-mix-dnd5e"],
+        moduleSuggestedTitle: ["FoundryVTT Compendiums Mix"],
+        moduleSuggestedUrl: ["https://github.com/p4535992/foundryvtt-compendiums-mix-dnd5e"],
+        moduleSuggestedManifestJson: ["https://raw.githubusercontent.com/p4535992/foundryvtt-compendiums-mix-dnd5e/master/src/module.json"],
+        moduleSuggestedState: [ModuleStateCategory.STABLE]
+    },
+    {
+        id: 340,
+        module: "SupplementalBestiary",
+        moduleTitle: "Supplemental Bestiary Compendium",
+        category: WarningCategory.Replaced,
+        message: "",
+        coreVersion: "0.7.1",
+        moduleUrl: "https://github.com/sparkcity/fvtt-supplementalbestiary",
+        moduleSuggested: ["foundryvtt-compendiums-mix-dnd5e"],
+        moduleSuggestedTitle: ["FoundryVTT Compendiums Mix"],
+        moduleSuggestedUrl: ["https://github.com/p4535992/foundryvtt-compendiums-mix-dnd5e"],
+        moduleSuggestedManifestJson: ["https://raw.githubusercontent.com/p4535992/foundryvtt-compendiums-mix-dnd5e/master/src/module.json"],
+        moduleSuggestedState: [ModuleStateCategory.STABLE]
+    },
     //Delisted Warnings (500-699)
     {
         id: 500,

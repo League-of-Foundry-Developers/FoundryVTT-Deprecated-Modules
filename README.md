@@ -106,6 +106,10 @@ These modules is no longer being maintained and could break with any Foundry upd
 |334 |[Token HUD Artwork Button / Show Art (token-hud-art-button)](https://github.com/zeel01/TokenHUDArtButton)|0.7.8|[Show Art With Credits (ShowArt)](https://github.com/HadaIonut/Foundry-Show-Art)|
 |335 |[Calendar/Weather (calendar-weather)](https://github.com/DasSauerkraut/calendar-weather)|0.7.9|[SmallTime (smalltime)](https://github.com/unsoluble/smalltime) or [Simple Calendar (foundryvtt-simple-calendar)](https://github.com/vigoren/foundryvtt-simple-calendar)|
 |336 |[GM Notes (gm-notes)](https://github.com/syl3r86/gm-notes)|0.7.5|[GM Notes fork Xeon2003 (gm-notes)](https://github.com/Xeon2003/gm-notes)|
+|337 |[FoundryVTT Lingering Injuries (foundryvtt-lingering-injuries)](https://gitlab.com/p4535992/foundryvtt-lingering-injuries)|0.7.1|[FoundryVTT Compendiums Mix](https://github.com/p4535992/foundryvtt-compendiums-mix-dnd5e)|
+|338 |[Kobold Press OGL Compendium (koboldpressogl)](http://kpogl.wdfiles.com/local--files/home:home/module.json)|0.7.1|[FoundryVTT Compendiums Mix](https://github.com/p4535992/foundryvtt-compendiums-mix-dnd5e)|
+|339 |[Summoner Compendium (summoner)](https://github.com/Jonwh25/summoner/)|0.7.1|[FoundryVTT Compendiums Mix](https://github.com/p4535992/foundryvtt-compendiums-mix-dnd5e)|
+|340 |[Supplemental Bestiary Compendium (SupplementalBestiary)](https://github.com/sparkcity/fvtt-supplementalbestiary)|0.7.1|[FoundryVTT Compendiums Mix](https://github.com/p4535992/foundryvtt-compendiums-mix-dnd5e)|
 
 ## Delisted Warnings
 
@@ -158,3 +162,8 @@ Any issues, bugs, or feature requests are always welcome to be reported directly
 Bootstrapped with League of Extraordinary FoundryVTT Developers [foundry-vtt-types](https://github.com/League-of-Foundry-Developers/foundry-vtt-types).
 
 Mad props to the 'League of Extraordinary FoundryVTT Developers' community which helped me figure out a lot.
+
+
+
+
+                        
