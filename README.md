@@ -5,6 +5,10 @@ Deprecated Modules is smart about which version of Foundry you're using when it 
 
 ![Example](ExampleWarning.png)
 
+# 0.8.X Compatibility Checker
+
+To assist you in preparing for an upgrade to 0.8.X, this module also has a compatibility checker. It will check your active modules to see which are confirmed to be 0.8.X compatible and which are not. To use the checker, click "Check Compatibility for 0.8.X" in Deprecated Module's settings.
+
 # Module Developers
 
 Deprecated Modules is integrated with Manifest+ to make it easier for you to mark your module as deprecated when you stop maintaining it.

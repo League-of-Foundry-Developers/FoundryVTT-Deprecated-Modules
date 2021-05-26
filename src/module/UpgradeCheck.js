@@ -17,13 +17,14 @@ export const States = Object.freeze({
 export class UpgradeCheck extends FormApplication {
     constructor(object, options) {
         super(object, options);
+        game.settings.sheet.close();
         this.modules = [];
         this.getActiveModules();
     }
 
     static get defaultOptions() {
         const options = super.defaultOptions;
-        options.title = "Major Version Upgrade Checker";
+        options.title = "0.8.X Compatibility Check";
         options.id = "DM-Upgrade-Check";
         options.template = "modules/deprecated-modules/templates/upgradeCheck.html";
         options.width = 350;
