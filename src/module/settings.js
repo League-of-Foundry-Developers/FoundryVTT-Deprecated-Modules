@@ -1,8 +1,11 @@
+import { UpgradeCheck } from "./updgradeCheck.js";
 import { modName } from "./utils.js";
 
 export const ignoredWarnings = "IgnoredWarnings";
 export const ignoredModules = "IgnoredModules";
 export const resetCheckbox = "ResetCheckbox";
+export const upgradeCheck = "UpgradeCheck";
+export const manifestCache = "ManifestCache";
 
 /**
  * A class to handle interacting with Foundry's settings.
@@ -61,6 +64,14 @@ export class Settings {
         game.settings.set(modName, ignoredModules, []);
     }
 
+    static getManifestCache() {
+        return game.settings.get(modName, manifestCache) ?? {};
+    }
+
+    static setManifestCache(cache) {
+        game.settings.set(modName, manifestCache, cache);
+    }
+
     static registerSettings() {
         game.settings.register(modName, resetCheckbox, {
             name: "Reset Ignored Warnings",
@@ -77,6 +88,15 @@ export class Settings {
             }
         });
 
+        game.settings.registerMenu(modName, upgradeCheck, {
+            name: "Major Version Upgrade",
+            label: "Upgrade Check",
+            hint: "Checks your modules to see which are prepared for a 0.8.X version upgrade.",
+            icon: "fas fa-search",
+            type: UpgradeCheck,
+            restricted: true
+        });
+
         game.settings.register(modName, ignoredWarnings, {
             scope: "world",
             config: false,
@@ -87,6 +107,12 @@ export class Settings {
             scope: "world",
             config: false,
             default: []
+        });
+
+        game.settings.register(modName, manifestCache, {
+            scope: "world",
+            config: false,
+            default: {}
         });
     }
 }

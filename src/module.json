@@ -9,6 +9,9 @@
 	"esmodules": [
 		"deprecatedModules.js"
 	],
+	"styles": [
+		"./styles/upgradeCheck.css"
+	],
 	"languages": [
 		{
 			"lang": "en",

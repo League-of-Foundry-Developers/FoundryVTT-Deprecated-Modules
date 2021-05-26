@@ -1,0 +1,22 @@
+<form autocomplete="off" onsubmit="event.preventDefault()">
+    <body>
+        <table>
+            <thead>
+                <th>Title</th>
+                <th>Status</th>
+            </thead>
+            <tbody>
+                {{#each modules}}
+                    <tr>
+                        <td class="right">{{title}}</td>
+                        <td class="center"><i class="{{state.icon}}" title="{{state.hover}}"></i></td>
+                    </tr>
+                {{/each}}
+            </tbody>
+        </table>
+    </body>
+    <div>
+        <a href="https://docs.google.com/spreadsheets/d/17ov1y91lglUXDj8Nu6J22ewC2x_483AoI6RyB6i1NRs/edit#gid=0">Spreadsheet of 0.8.x compatibility</a>
+        <button type="submit" name="submit">Ok</button>
+    </div>
+</form>
