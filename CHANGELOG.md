@@ -1,3 +1,7 @@
+# 1.1.0
+
+* Add 0.8.X compatibility checker
+
 # 1.0.1
 
 * Update warnings database.
