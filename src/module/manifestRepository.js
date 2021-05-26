@@ -53,7 +53,8 @@ export class ManifestRepository {
                 }
                 Settings.setManifestCache(cache);
             }
-        });
+        }).catch(err => console.log("Issue caching manifest."));
+        // This error should pop up elsewhere as well, so don't 
     }
 
     static getCacheKey(module, forge, version) {

@@ -1,4 +1,4 @@
-import { UpgradeCheck } from "./updgradeCheck.js";
+import { UpgradeCheck } from "./UpgradeCheck.js";
 import { modName } from "./utils.js";
 
 export const ignoredWarnings = "IgnoredWarnings";

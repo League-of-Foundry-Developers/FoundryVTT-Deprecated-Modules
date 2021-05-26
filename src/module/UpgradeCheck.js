@@ -5,7 +5,8 @@ export const States = Object.freeze({
     Orphan: { icon: "fas fa-question-circle", hover: "No Manifest Found" },
     CheckNeeded: { icon: "fas fa-question-circle yellow", hover: "Check Spreadsheet" },
     UpToDate: { icon: "fas fa-check-circle green", hover: "Up To Date" },
-    Download: { icon: "fas fa-arrow-circle-down green", hover: "Good After Update" }
+    Download: { icon: "fas fa-arrow-circle-down green", hover: "Good After Update" },
+    ERROR: { icon: "fas fa-minus-circle", hover: "Error Auto-Checking Manifest" }
 })
 
 /**
@@ -26,7 +27,7 @@ export class UpgradeCheck extends FormApplication {
         options.id = "DM-Upgrade-Check";
         options.template = "modules/deprecated-modules/templates/upgradeCheck.html";
         options.width = 350;
-        options.height = 800;
+        options.height = "auto";
         return options;
     }
 
@@ -66,7 +67,9 @@ export class UpgradeCheck extends FormApplication {
             });
             // Download the latest manifest and see if it's marked as compatible with 0.8.X
             if(checkManifest) {
-                ManifestRepository.getManifest(module).then(manifest => this.updateModuleList(module.data.name, manifest));
+                ManifestRepository.getManifest(module)
+                .then(manifest => this.updateModuleList(module.data.name, manifest))
+                .catch(err => this.handleFailure(module.data.name, err));
             }
         }
     }
@@ -83,6 +86,16 @@ export class UpgradeCheck extends FormApplication {
                 else {
                     module.state = States.CheckNeeded;
                 }
+            }
+        }
+        this.render();
+    }
+
+    handleFailure(moduleName, err) {
+        console.error("Error loading manifest for " + moduleName + ": ", err);
+        for (let module of this.modules) {
+            if(module.name === moduleName) {
+                module.state = States.ERROR;
             }
         }
         this.render();
