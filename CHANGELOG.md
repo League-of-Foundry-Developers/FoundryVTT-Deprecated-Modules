@@ -1,3 +1,11 @@
+# 1.1.1
+
+* Add system to 0.8.x compatibility checker
+
+* Improve visuals of compatibility checker
+
+* Bump Foundry compatibility to 0.8.6
+
 # 1.1.0
 
 * Add 0.8.x compatibility checker
