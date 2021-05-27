@@ -7,6 +7,10 @@
 }
 
 .green {
+    color: rgb(122, 231, 122);
+}
+
+.darkgreen {
     color: green;
 }
 

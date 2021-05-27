@@ -8,19 +8,33 @@
             <tbody>
                 <tr>
                     <td class="right"><b>{{system.title}}</b></td>
-                    <td class="center"><i class="{{system.state.icon}}" title="{{system.state.hover}}"></i></td>
+                    <td class="center">
+                        <span class="fa-stack fa-1x">
+                            {{#if state.stack}}
+                            <i class="fas fa-circle fa-stack-1x gray"></i>
+                            {{/if}}
+                            <i class="{{system.state.icon}} fa-stack-1x" title="{{system.state.hover}}"></i>
+                        </span>
+                    </td>
                 </tr>
                 {{#each modules}}
                 <tr>
                     <td class="right">{{title}}</td>
-                    <td class="center"><i class="{{state.icon}}" title="{{state.hover}}"></i></td>
+                    <td class="center">
+                        <span class="fa-stack fa-1x">
+                            {{#if state.stack}}
+                            <i class="fas fa-circle fa-stack-1x gray"></i>
+                            {{/if}}
+                            <i class="{{state.icon}} fa-stack-1x" title="{{state.hover}}"></i>
+                        </span>
+                    </td>
                 </tr>
                 {{/each}}
             </tbody>
         </table>
     </body>
     <div>
-        <a href="https://docs.google.com/spreadsheets/d/17ov1y91lglUXDj8Nu6J22ewC2x_483AoI6RyB6i1NRs/edit#gid=0">Spreadsheet of 0.8.x compatibility</a>
+        <p><a href="https://docs.google.com/spreadsheets/d/17ov1y91lglUXDj8Nu6J22ewC2x_483AoI6RyB6i1NRs/edit#gid=0">Spreadsheet of 0.8.x compatibility</a></p>
         <button type="submit" name="submit">Ok</button>
     </div>
 </form>
