@@ -19,6 +19,7 @@ export class UpgradeCheck extends FormApplication {
         super(object, options);
         game.settings.sheet.close();
         this.modules = [];
+        this.checkSystem();
         this.getActiveModules();
     }
 
@@ -34,12 +35,49 @@ export class UpgradeCheck extends FormApplication {
 
     getData() {
         return {
-            modules: this.modules
+            modules: this.modules,
+            system: this.system
         }
     }
 
     activateListeners(html) {
         super.activateListeners(html);
+    }
+
+    checkSystem() {
+        let state = States.Pending;
+        let checkManifest = true;
+        // See if this manifest is marked as compatible with 0.8.X
+        if(this.versionIsGood(game.system.data.compatibleCoreVersion)) {
+            state = States.UpToDate;
+            checkManifest = false;
+        }
+        //If the manifest isn't pointing to somewhere to check for updates, don't bother checking
+        if(checkManifest && !game.system.data.manifest) {
+            state = States.Orphan;
+            checkManifest = false;
+        }
+        this.system = {
+            name: game.system.data.name,
+            title: game.system.data.title,
+            state
+        }
+        if(checkManifest) {
+            ManifestRepository.getManifest(game.system)
+            .then(manifest => {
+                if(!manifest) {
+                    this.system.state = States.Orphan;
+                }
+                else if(this.versionIsGood(manifest.compatibleCoreVersion)) {
+                    this.system.state = States.Download;
+                }
+                else {
+                    this.system.state = States.CheckNeeded;
+                }
+                this.render();
+            })
+            .catch(err => this.handleFailure(game.system.data.name, err));
+        }
     }
 
     getActiveModules() {

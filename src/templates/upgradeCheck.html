@@ -6,11 +6,15 @@
                 <th>Status</th>
             </thead>
             <tbody>
+                <tr>
+                    <td class="right"><b>{{system.title}}</b></td>
+                    <td class="center"><i class="{{system.state.icon}}" title="{{system.state.hover}}"></i></td>
+                </tr>
                 {{#each modules}}
-                    <tr>
-                        <td class="right">{{title}}</td>
-                        <td class="center"><i class="{{state.icon}}" title="{{state.hover}}"></i></td>
-                    </tr>
+                <tr>
+                    <td class="right">{{title}}</td>
+                    <td class="center"><i class="{{state.icon}}" title="{{state.hover}}"></i></td>
+                </tr>
                 {{/each}}
             </tbody>
         </table>
