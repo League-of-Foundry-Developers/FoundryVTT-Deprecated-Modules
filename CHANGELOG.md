@@ -1,3 +1,7 @@
+# 1.1.2
+
+* Make it clear when systems aren't 0.8.x compatible
+
 # 1.1.1
 
 * Add system to 0.8.x compatibility checker

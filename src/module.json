@@ -2,7 +2,7 @@
 	"name": "deprecated-modules",
 	"title": "Deprecated Modules",
 	"description": "Warns gamemasters when they're using a module that's been integrated into core or is considered unsafe to use.",
-	"version": "1.1.1",
+	"version": "1.1.2",
 	"author": "iceman76",
 	"minimumCoreVersion": "0.6.6",
 	"compatibleCoreVersion": "0.8.5",
