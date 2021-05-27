@@ -16,6 +16,7 @@ Most modules will be put into one of three categories:
 * ![Good](images/Compatible.png) This module's current version is compatible with 0.8.x.
 * ![Download](images/Download.png) This module has a 0.8.x compatible version, but you currently don't have it downloaded.
 * ![Spreadsheet](images/CheckSpreadsheet.png) This module may or may not be compatible with 0.8.x. Check the linked spreadsheet for more info.
+* ![Incompatible](images/Incompatible.png) (Systems Only) This system is not compatible with 0.8.x. **DO NOT UPGRADE TO 0.8.X YET.**
 
 ![CompatibilityCheckWindow](images/CompatibilityCheck.png)
 

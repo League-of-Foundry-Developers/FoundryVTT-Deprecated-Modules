@@ -6,6 +6,7 @@ export const States = Object.freeze({
     CheckNeeded: { icon: "fas fa-question-circle yellow", stack: true, hover: "Check Spreadsheet" },
     UpToDate: { icon: "fas fa-check-circle green", stack: true, hover: "0.8.x Compatible" },
     Download: { icon: "fas fa-arrow-circle-down darkgreen", hover: "Compatible After Update" },
+    Incompatible: { icon: "fas fa-minus-circle red", hover: "NOT COMPATIBLE WITH 0.8.X" },
     ERROR: { icon: "fas fa-minus-circle", hover: "Error Auto-Checking Manifest" }
 })
 
@@ -72,7 +73,7 @@ export class UpgradeCheck extends FormApplication {
                     this.system.state = States.Download;
                 }
                 else {
-                    this.system.state = States.CheckNeeded;
+                    this.system.state = States.Incompatible;
                 }
                 this.render();
             })
