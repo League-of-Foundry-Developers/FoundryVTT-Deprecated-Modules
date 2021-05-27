@@ -4,7 +4,7 @@ export const States = Object.freeze({
     Pending: { icon: "fas fa-spinner fa-spin", hover: "Checking Manifest" },
     Orphan: { icon: "fas fa-question-circle", hover: "No Remote Manifest Found" },
     CheckNeeded: { icon: "fas fa-question-circle yellow", stack: true, hover: "Check Spreadsheet" },
-    UpToDate: { icon: "fas fa-check-circle green", stack: true, hover: "0.8.X Compatible" },
+    UpToDate: { icon: "fas fa-check-circle green", stack: true, hover: "0.8.x Compatible" },
     Download: { icon: "fas fa-arrow-circle-down darkgreen", hover: "Compatible After Update" },
     ERROR: { icon: "fas fa-minus-circle", hover: "Error Auto-Checking Manifest" }
 })
@@ -25,7 +25,7 @@ export class UpgradeCheck extends FormApplication {
 
     static get defaultOptions() {
         const options = super.defaultOptions;
-        options.title = "0.8.X Compatibility Check";
+        options.title = "0.8.x Compatibility Check";
         options.id = "DM-Upgrade-Check";
         options.template = "modules/deprecated-modules/templates/upgradeCheck.html";
         options.width = 350;

@@ -1,6 +1,6 @@
 # 1.1.0
 
-* Add 0.8.X compatibility checker
+* Add 0.8.x compatibility checker
 
 # 1.0.1
 

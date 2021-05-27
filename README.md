@@ -3,11 +3,21 @@ Deprecated Modules is a module that will warn game masters whenever they use a m
 
 Deprecated Modules is smart about which version of Foundry you're using when it checks your modules. For example, Deselection is a module that was integrated into core Foundry in 0.7.3. If you're using Deselection in an earlier version of Foundry, Deprecated Modules will not warn you about it.
 
-![Example](ExampleWarning.png)
+![Example](images/ExampleWarning.png)
 
-# 0.8.X Compatibility Checker
+# 0.8.x Compatibility Checker
 
-To assist you in preparing for an upgrade to 0.8.X, this module also has a compatibility checker. It will check your active modules to see which are confirmed to be 0.8.X compatible and which are not. To use the checker, click "Check Compatibility for 0.8.X" in Deprecated Module's settings.
+To assist you in preparing for an upgrade to Foundry VTT 0.8.x, this module also has a module compatibility checker. It will check your system and active modules to see which are confirmed to be 0.8.x compatible and which are not. To use it, click "Check Compatibility for 0.8.x" in Deprecated Module's settings.
+
+![Settings](images/Settings.png)
+
+Most modules will be put into one of three categories:
+
+* ![Good](images/Compatible.png) This module's current version is compatible with 0.8.x.
+* ![Download](images/Download.png) This module has a 0.8.x compatible version, but you currently don't have it downloaded.
+* ![Spreadsheet](images/CheckSpreadsheet.png) This module may or may not be compatible with 0.8.x. Check the linked spreadsheet for more info.
+
+![CompatibilityCheckWindow](images/CompatibilityCheck.png)
 
 # Module Developers
 
