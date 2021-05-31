@@ -1,6 +1,6 @@
 import { Settings } from "./settings.js";
 
-const CACHE_LENGTH = 1000 * 60 * 60 * 24; // 1 day
+const CACHE_LENGTH = 1000 * 60 * 60 * 1; // 1 hour
 const BATCH_SIZE = 20;
 
 export class ManifestRepository {
