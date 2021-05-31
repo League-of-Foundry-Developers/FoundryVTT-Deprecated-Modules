@@ -1,3 +1,11 @@
+# 1.1.3
+
+0.8.x Compatibility Checker
+
+* Add option to check inactive modules 
+* Reduce manifest cache time to 1 hour
+* Fix manifests occasionally not being cached
+
 # 1.1.2
 
 * Make it clear when systems aren't 0.8.x compatible
@@ -5,9 +13,7 @@
 # 1.1.1
 
 * Add system to 0.8.x compatibility checker
-
 * Improve visuals of compatibility checker
-
 * Bump Foundry compatibility to 0.8.6
 
 # 1.1.0
