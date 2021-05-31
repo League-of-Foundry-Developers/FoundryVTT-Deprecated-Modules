@@ -1,4 +1,5 @@
 import { ManifestRepository } from "./manifestRepository.js";
+import { Settings } from "./settings.js";
 
 export const States = Object.freeze({
     Pending: { icon: "fas fa-spinner fa-spin", hover: "Checking Manifest" },
@@ -21,7 +22,7 @@ export class UpgradeCheck extends FormApplication {
         game.settings.sheet.close();
         this.modules = [];
         this.checkSystem();
-        this.getActiveModules();
+        this.getActiveModules(true);
     }
 
     static get defaultOptions() {
@@ -43,6 +44,7 @@ export class UpgradeCheck extends FormApplication {
 
     activateListeners(html) {
         super.activateListeners(html);
+        html.find('button[name="check-inactive"]').click(this.getActiveModules.bind(this, false));
     }
 
     checkSystem() {
@@ -81,10 +83,10 @@ export class UpgradeCheck extends FormApplication {
         }
     }
 
-    getActiveModules() {
+    getActiveModules(activeOnly) {
         this.modules = [];
         for (let [name, module] of game.modules) {
-            if(!module.active) {
+            if(activeOnly && !module.active) {
                 continue;
             }
             let state = States.Pending;
@@ -103,6 +105,7 @@ export class UpgradeCheck extends FormApplication {
             this.modules.push({
                 name: module.data.name,
                 title: module.data.title,
+                active: module.active,
                 state
             });
             // Download the latest manifest and see if it's marked as compatible with 0.8.X
@@ -112,6 +115,7 @@ export class UpgradeCheck extends FormApplication {
                 .catch(err => this.handleFailure(module.data.name, err));
             }
         }
+        this.render();
     }
 
     updateModuleList(moduleName, manifest) {

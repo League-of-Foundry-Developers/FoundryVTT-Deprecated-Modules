@@ -19,7 +19,13 @@
                 </tr>
                 {{#each modules}}
                 <tr>
-                    <td class="right">{{title}}</td>
+                    <td class="right">
+                        {{#if active}}
+                            {{title}}
+                        {{else}}
+                            <i class="gray" title="Inactive">{{title}}</i>
+                        {{/if}}
+                    </td>
                     <td class="center">
                         <span class="fa-stack fa-1x">
                             {{#if state.stack}}
@@ -35,6 +41,7 @@
     </body>
     <div>
         <p><a href="https://docs.google.com/spreadsheets/d/17ov1y91lglUXDj8Nu6J22ewC2x_483AoI6RyB6i1NRs/edit#gid=0">Spreadsheet of 0.8.x compatibility</a></p>
+        <button type="button" name="check-inactive">Check Inactive Modules</button>
         <button type="submit" name="submit">Ok</button>
     </div>
 </form>
