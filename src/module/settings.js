@@ -11,6 +11,8 @@ export const manifestCache = "ManifestCache";
  * A class to handle interacting with Foundry's settings.
  */
 export class Settings {
+    _manifestCache = null;
+
     /**
      * Adds a warning to the list of warnings to ignore
      * @param {number} warningID The ID of the warning
@@ -65,10 +67,17 @@ export class Settings {
     }
 
     static getManifestCache() {
-        return game.settings.get(modName, manifestCache) ?? {};
+        // Since settings.set is async, changes won't be reflected immediately
+        // So, we lazy load the manifest cache and store a version of it to make
+        // sure everything stays coordinated
+        if(!this._manifestCache) {
+            this._manifestCache = game.settings.get(modName, manifestCache) ?? {};
+        }
+        return this._manifestCache;
     }
 
     static setManifestCache(cache) {
+        this._manifestCache = cache;
         game.settings.set(modName, manifestCache, cache);
     }
 
