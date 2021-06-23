@@ -12,13 +12,6 @@
 	"styles": [
 		"./styles/upgradeCheck.css"
 	],
-	"languages": [
-		{
-			"lang": "en",
-			"name": "English",
-			"path": "lang/en.json"
-		}
-	],
 	"allowBugReporter": true,
 	"url": "https://github.com/League-of-Foundry-Developers/FoundryVTT-Deprecated-Modules",
 	"manifest": "https://github.com/League-of-Foundry-Developers/FoundryVTT-Deprecated-Modules/releases/latest/download/module.json",
