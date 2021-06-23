@@ -1,3 +1,8 @@
+# 1.1.4
+
+* Remove erroneous language configuration
+* Bump compatibility to 0.8.7
+
 # 1.1.3
 
 0.8.x Compatibility Checker
