@@ -157,6 +157,10 @@ The modules are check like "abandoned" if all of the below cases apply:
 
 Any issues, bugs, or feature requests are always welcome to be reported directly to the [Issue Tracker](https://github.com/League-of-Foundry-Developers/FoundryVTT-Deprecated-Modules/issues ), or using the [Bug Reporter Module](https://foundryvtt.com/packages/bug-reporter/).
 
+## License
+
+This package is under an [MIT license](LICENSE) and the [Foundry Virtual Tabletop Limited License Agreement for module development](https://foundryvtt.com/article/license/).
+
 ## Acknowledgements
 
 Bootstrapped with League of Extraordinary FoundryVTT Developers [foundry-vtt-types](https://github.com/League-of-Foundry-Developers/foundry-vtt-types).
