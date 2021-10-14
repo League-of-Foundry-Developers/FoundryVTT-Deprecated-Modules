@@ -1,4 +1,6 @@
-# Deprecated Modules
+# Deprecated Modules (Typescript Version)
+
+# THIS MODULE IS ABBANDONED
 
 Deprecated Modules is a module that will warn game masters whenever they use a module that they shouldn't be using anymore. This includes modules that have been integrated into core Foundry, modules that have been entirely replaced by other modules, and modules that have broken and are no longer being maintained.
 
