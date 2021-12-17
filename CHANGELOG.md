@@ -1,3 +1,8 @@
+# 1.1.5
+
+* Update compatibility checker to V9
+* Bump compatibility to V9
+
 # 1.1.4
 
 * Remove erroneous language configuration
