@@ -9,18 +9,18 @@ Deprecated Modules is smart about which version of Foundry you're using when it 
 
 ![Example](images/ExampleWarning.png)
 
-# 0.8.x Compatibility Checker
+# Version 9 Compatibility Checker
 
-To assist you in preparing for an upgrade to Foundry VTT 0.8.x, this module also has a module compatibility checker. It will check your system and active modules to see which are confirmed to be 0.8.x compatible and which are not. To use it, click "Check Compatibility for 0.8.x" in Deprecated Module's settings.
+To assist you in preparing for an upgrade to Foundry VTT Version 9, this module also has a module compatibility checker. It will check your system and active modules to see which are confirmed to be V9 compatible and which are not. To use it, click "Check Compatibility for Version 9" in Deprecated Module's settings.
 
 ![Settings](images/Settings.png)
 
 Most modules will be put into one of three categories:
 
-* ![Good](images/Compatible.png) This module's current version is compatible with 0.8.x.
-* ![Download](images/Download.png) This module has a 0.8.x compatible version, but you currently don't have it downloaded.
-* ![Spreadsheet](images/CheckSpreadsheet.png) This module may or may not be compatible with 0.8.x. Check the linked spreadsheet for more info.
-* ![Incompatible](images/Incompatible.png) (Systems Only) This system is not compatible with 0.8.x. **DO NOT UPGRADE TO 0.8.X YET.**
+* ![Good](images/Compatible.png) This module's current version is compatible with V9.
+* ![Download](images/Download.png) This module has a version that's compatible with V9, but you currently don't have it downloaded.
+* ![Spreadsheet](images/CheckSpreadsheet.png) This module may or may not be compatible with V9. Check the linked spreadsheet for more info.
+* ![Incompatible](images/Incompatible.png) (Systems Only) This system is not compatible with V9. **DO NOT UPGRADE TO V9 YET.**
 
 ![CompatibilityCheckWindow](images/CompatibilityCheck.png)
 

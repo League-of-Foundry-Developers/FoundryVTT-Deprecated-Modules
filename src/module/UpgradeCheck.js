@@ -5,9 +5,9 @@ export const States = Object.freeze({
     Pending: { icon: "fas fa-spinner fa-spin", hover: "Checking Manifest" },
     Orphan: { icon: "fas fa-question-circle", hover: "No Remote Manifest Found" },
     CheckNeeded: { icon: "fas fa-question-circle yellow", stack: true, hover: "Check Spreadsheet" },
-    UpToDate: { icon: "fas fa-check-circle green", stack: true, hover: "0.8.x Compatible" },
+    UpToDate: { icon: "fas fa-check-circle green", stack: true, hover: "V9 Compatible" },
     Download: { icon: "fas fa-arrow-circle-down darkgreen", hover: "Compatible After Update" },
-    Incompatible: { icon: "fas fa-minus-circle red", hover: "NOT COMPATIBLE WITH 0.8.X" },
+    Incompatible: { icon: "fas fa-minus-circle red", hover: "NOT COMPATIBLE WITH V9" },
     ERROR: { icon: "fas fa-minus-circle", hover: "Error Auto-Checking Manifest" }
 })
 
@@ -27,7 +27,7 @@ export class UpgradeCheck extends FormApplication {
 
     static get defaultOptions() {
         const options = super.defaultOptions;
-        options.title = "0.8.x Compatibility Check";
+        options.title = "Version 9 Compatibility Check";
         options.id = "DM-Upgrade-Check";
         options.template = "modules/deprecated-modules/templates/upgradeCheck.html";
         options.width = 350;
@@ -50,7 +50,7 @@ export class UpgradeCheck extends FormApplication {
     checkSystem() {
         let state = States.Pending;
         let checkManifest = true;
-        // See if this manifest is marked as compatible with 0.8.X
+        // See if this manifest is marked as compatible with V9
         if(this.versionIsGood(game.system.data.compatibleCoreVersion)) {
             state = States.UpToDate;
             checkManifest = false;
@@ -91,7 +91,7 @@ export class UpgradeCheck extends FormApplication {
             }
             let state = States.Pending;
             let checkManifest = true;
-            // See if this manifest is marked as compatible with 0.8.X
+            // See if this manifest is marked as compatible with V9
             if(this.versionIsGood(module.data.compatibleCoreVersion)) {
                 state = States.UpToDate;
                 checkManifest = false;
@@ -108,7 +108,7 @@ export class UpgradeCheck extends FormApplication {
                 active: module.active,
                 state
             });
-            // Download the latest manifest and see if it's marked as compatible with 0.8.X
+            // Download the latest manifest and see if it's marked as compatible with V9
             if(checkManifest) {
                 ManifestRepository.getManifest(module)
                 .then(manifest => this.updateModuleList(module.data.name, manifest))
@@ -146,7 +146,7 @@ export class UpgradeCheck extends FormApplication {
     }
 
     versionIsGood(moduleVersion) {
-        return isNewerVersion(moduleVersion, "0.8.0");
+        return isNewerVersion(moduleVersion, "0.9.0");
     }
 
     _updateObject(_event, formData) {

@@ -99,8 +99,8 @@ export class Settings {
 
         game.settings.registerMenu(modName, upgradeCheck, {
             name: "Compatibility Check",
-            label: "Check Compatibility for 0.8.x",
-            hint: "Checks your modules to see which are prepared for a 0.8.x version upgrade.",
+            label: "Check Compatibility for Version 9",
+            hint: "Checks your modules to see which are prepared for an upgrade to Version 9.",
             icon: "fas fa-search",
             type: UpgradeCheck,
             restricted: true
