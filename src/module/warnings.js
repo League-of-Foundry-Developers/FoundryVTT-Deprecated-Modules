@@ -333,6 +333,7 @@ export const warnings = [
         module: "cursor-hider",
         category: WarningCategory.Delisted,
         message: DefaultMessages.delisted(),
-        coreVersion: "0.8.0"
+        coreVersion: "0.8.0",
+        inactive: true
     }
 ]
