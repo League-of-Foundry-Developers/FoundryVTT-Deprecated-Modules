@@ -1,3 +1,7 @@
+# 1.1.6
+
+* Update warnings
+
 # 1.1.5
 
 * Update compatibility checker to V9
